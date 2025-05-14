@@ -695,9 +695,9 @@ Rigidbody:
   m_ImplicitCom: 1
   m_ImplicitTensor: 1
   m_UseGravity: 0
-  m_IsKinematic: 1
+  m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 112
   m_CollisionDetection: 0
 --- !u!1 &2073797614
 GameObject:
@@ -836,7 +836,7 @@ Transform:
   m_GameObject: {fileID: 844406417875476547}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: -1.094, z: 0.022000074}
+  m_LocalPosition: {x: 0, y: -1.035, z: 0.022000074}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1020,6 +1020,7 @@ GameObject:
   - component: {fileID: 2405918971842349341}
   - component: {fileID: 2405918971842349340}
   - component: {fileID: 2405918971842349339}
+  - component: {fileID: 2405918971842349342}
   - component: {fileID: 2405918971842349338}
   m_Layer: 0
   m_Name: TibiaPieR_Bone
@@ -1070,6 +1071,7 @@ GameObject:
   - component: {fileID: 1901012559904778470}
   - component: {fileID: 1901012559904778473}
   - component: {fileID: 1901012559904778471}
+  - component: {fileID: 1901012559904778474}
   - component: {fileID: 1901012559904778472}
   m_Layer: 0
   m_Name: FemurR_Bone
@@ -1241,7 +1243,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &1436410341740335521
 GameObject:
   m_ObjectHideFlags: 0
@@ -1259,7 +1261,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &1482778584402165378
 GameObject:
   m_ObjectHideFlags: 0
@@ -1465,7 +1467,7 @@ ConfigurableJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 0.006752853, y: -0.0039842934, z: 0.0010573862}
+  m_ConnectedAnchor: {x: 0.006175885, y: 0.003476631, z: -0.0013184478}
   serializedVersion: 3
   m_SecondaryAxis: {x: 0, y: 1, z: 0}
   m_XMotion: 0
@@ -1528,14 +1530,14 @@ ConfigurableJoint:
   m_RotationDriveMode: 0
   m_AngularXDrive:
     serializedVersion: 4
-    positionSpring: 0
-    positionDamper: 0
+    positionSpring: 30
+    positionDamper: 5
     maximumForce: 3.4028233e+38
     useAcceleration: 0
   m_AngularYZDrive:
     serializedVersion: 4
-    positionSpring: 0
-    positionDamper: 0
+    positionSpring: 30
+    positionDamper: 5
     maximumForce: 3.4028233e+38
     useAcceleration: 0
   m_SlerpDrive:
@@ -1578,6 +1580,20 @@ CapsuleCollider:
   m_Height: 0.022450225
   m_Direction: 1
   m_Center: {x: -0.000000005737697, y: 0.010848648, z: -0.000000011826346}
+--- !u!114 &1901012559904778474
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 783173272037169118}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ba57f15760a03ce48a4643e13e6346d9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 3656941489892670755}
+  joint: {fileID: 1901012559904778472}
 --- !u!1 &1990309235954793003
 GameObject:
   m_ObjectHideFlags: 0
@@ -1595,7 +1611,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!33 &2015965424212591956
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -1716,6 +1732,7 @@ GameObject:
   - component: {fileID: 2372258421840323972}
   - component: {fileID: 2372258421840323971}
   - component: {fileID: 2372258421840323970}
+  - component: {fileID: 2372258421840323973}
   - component: {fileID: 2372258421840323969}
   m_Layer: 0
   m_Name: TibiaL_Bone
@@ -1768,7 +1785,7 @@ ConfigurableJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: -5.2386895e-10, y: 0.021419764, z: 0.0000000055879354}
+  m_ConnectedAnchor: {x: 2.910383e-10, y: 0.02141977, z: -0.0000000041909516}
   serializedVersion: 3
   m_SecondaryAxis: {x: 0, y: 1, z: 0}
   m_XMotion: 0
@@ -1831,14 +1848,14 @@ ConfigurableJoint:
   m_RotationDriveMode: 0
   m_AngularXDrive:
     serializedVersion: 4
-    positionSpring: 0
-    positionDamper: 0
+    positionSpring: 30
+    positionDamper: 5
     maximumForce: 3.4028233e+38
     useAcceleration: 0
   m_AngularYZDrive:
     serializedVersion: 4
-    positionSpring: 0
-    positionDamper: 0
+    positionSpring: 30
+    positionDamper: 5
     maximumForce: 3.4028233e+38
     useAcceleration: 0
   m_SlerpDrive:
@@ -1904,8 +1921,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.0064282385, y: 0.0029765295, z: 0.013965272}
-  m_Center: {x: 0.0004117783, y: 0.02164698, z: 0.00420179}
+  m_Size: {x: 0.0064282375, y: 0.0010211263, z: 0.013965271}
+  m_Center: {x: 0.00041177796, y: 0.020669261, z: 0.0042017903}
 --- !u!136 &2372258421840323972
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -1929,6 +1946,20 @@ CapsuleCollider:
   m_Height: 0.022450225
   m_Direction: 1
   m_Center: {x: -0.000000005737697, y: 0.010848648, z: -0.000000011826346}
+--- !u!114 &2372258421840323973
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2282907370403464520}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ba57f15760a03ce48a4643e13e6346d9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 597329784902922309}
+  joint: {fileID: 2372258421840323969}
 --- !u!23 &2377156021418386381
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -1999,7 +2030,7 @@ ConfigurableJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 0, y: 0.021545934, z: 0.0000000018626451}
+  m_ConnectedAnchor: {x: 0.0000000016298145, y: 0.021545919, z: 0.0000000018626451}
   serializedVersion: 3
   m_SecondaryAxis: {x: 0, y: 1, z: 0}
   m_XMotion: 0
@@ -2062,14 +2093,14 @@ ConfigurableJoint:
   m_RotationDriveMode: 0
   m_AngularXDrive:
     serializedVersion: 4
-    positionSpring: 0
-    positionDamper: 0
+    positionSpring: 30
+    positionDamper: 5
     maximumForce: 3.4028233e+38
     useAcceleration: 0
   m_AngularYZDrive:
     serializedVersion: 4
-    positionSpring: 0
-    positionDamper: 0
+    positionSpring: 30
+    positionDamper: 5
     maximumForce: 3.4028233e+38
     useAcceleration: 0
   m_SlerpDrive:
@@ -2158,8 +2189,22 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.0064282385, y: 0.0029765295, z: 0.013965272}
-  m_Center: {x: 0.0004117783, y: 0.02164698, z: 0.00420179}
+  m_Size: {x: 0.0064282375, y: 0.00084758986, z: 0.013965273}
+  m_Center: {x: 0.00041177982, y: 0.020582551, z: 0.00420179}
+--- !u!114 &2405918971842349342
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 625125259463896916}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ba57f15760a03ce48a4643e13e6346d9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 703224271510953180}
+  joint: {fileID: 2405918971842349338}
 --- !u!1 &2485903156723417627
 GameObject:
   m_ObjectHideFlags: 0
@@ -2207,7 +2252,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!1 &2529072147598203346
 GameObject:
   m_ObjectHideFlags: 0
@@ -2219,6 +2264,7 @@ GameObject:
   - component: {fileID: 1635811131537187557}
   - component: {fileID: 2529072147598203349}
   - component: {fileID: 2529072147598203347}
+  - component: {fileID: 2529072147598203350}
   - component: {fileID: 2529072147598203348}
   m_Layer: 0
   m_Name: BrazoL_Bone
@@ -2266,7 +2312,7 @@ ConfigurableJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: -0.0077666603, y: 0.018750574, z: 0.00107869}
+  m_ConnectedAnchor: {x: -0.0077666603, y: 0.018750593, z: 0.0010786966}
   serializedVersion: 3
   m_SecondaryAxis: {x: 0, y: 1, z: 0}
   m_XMotion: 0
@@ -2329,14 +2375,14 @@ ConfigurableJoint:
   m_RotationDriveMode: 0
   m_AngularXDrive:
     serializedVersion: 4
-    positionSpring: 0
-    positionDamper: 0
+    positionSpring: 15
+    positionDamper: 4
     maximumForce: 3.4028233e+38
     useAcceleration: 0
   m_AngularYZDrive:
     serializedVersion: 4
-    positionSpring: 0
-    positionDamper: 0
+    positionSpring: 15
+    positionDamper: 4
     maximumForce: 3.4028233e+38
     useAcceleration: 0
   m_SlerpDrive:
@@ -2379,6 +2425,20 @@ CapsuleCollider:
   m_Height: 0.018839324
   m_Direction: 1
   m_Center: {x: -0.000000007323355, y: 0.0069196885, z: -0.000000010881254}
+--- !u!114 &2529072147598203350
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2529072147598203346}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ba57f15760a03ce48a4643e13e6346d9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 4472709671366031136}
+  joint: {fileID: 2529072147598203348}
 --- !u!4 &2755362807910432490
 Transform:
   m_ObjectHideFlags: 0
@@ -2697,7 +2757,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &3967482265165598861
 GameObject:
   m_ObjectHideFlags: 0
@@ -2878,7 +2938,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &4410916237628615349
 Transform:
   m_ObjectHideFlags: 0
@@ -2947,6 +3007,7 @@ GameObject:
   - component: {fileID: 3584839292534938687}
   - component: {fileID: 4471479079826469404}
   - component: {fileID: 4471479079826469402}
+  - component: {fileID: 4471479079826469405}
   - component: {fileID: 4471479079826469403}
   m_Layer: 0
   m_Name: BrazoR_Bone
@@ -2994,7 +3055,7 @@ ConfigurableJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 0.008012917, y: 0.018940765, z: -0.00015254413}
+  m_ConnectedAnchor: {x: 0.008012913, y: 0.018940777, z: -0.00015255112}
   serializedVersion: 3
   m_SecondaryAxis: {x: 0, y: 1, z: 0}
   m_XMotion: 0
@@ -3057,14 +3118,14 @@ ConfigurableJoint:
   m_RotationDriveMode: 0
   m_AngularXDrive:
     serializedVersion: 4
-    positionSpring: 0
-    positionDamper: 0
+    positionSpring: 15
+    positionDamper: 4
     maximumForce: 3.4028233e+38
     useAcceleration: 0
   m_AngularYZDrive:
     serializedVersion: 4
-    positionSpring: 0
-    positionDamper: 0
+    positionSpring: 15
+    positionDamper: 4
     maximumForce: 3.4028233e+38
     useAcceleration: 0
   m_SlerpDrive:
@@ -3107,6 +3168,20 @@ CapsuleCollider:
   m_Height: 0.018839324
   m_Direction: 1
   m_Center: {x: -0.000000007323355, y: 0.0069196885, z: -0.000000010881254}
+--- !u!114 &4471479079826469405
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4471479079826469401}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ba57f15760a03ce48a4643e13e6346d9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 1809946115009071610}
+  joint: {fileID: 4471479079826469403}
 --- !u!4 &4472709671366031136
 Transform:
   m_ObjectHideFlags: 0
@@ -3237,7 +3312,7 @@ Transform:
   m_GameObject: {fileID: 6209042539576659110}
   serializedVersion: 2
   m_LocalRotation: {x: 0.7071068, y: 0, z: -0, w: 0.7071067}
-  m_LocalPosition: {x: -0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -3387,7 +3462,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &5553126143823915822
 Transform:
   m_ObjectHideFlags: 0
@@ -3420,7 +3495,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &5652845138678216168
 GameObject:
   m_ObjectHideFlags: 0
@@ -3504,7 +3579,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!23 &5956590559447641792
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -3558,6 +3633,7 @@ GameObject:
   - component: {fileID: 6246067308058147048}
   - component: {fileID: 6246067308058147051}
   - component: {fileID: 6246067308058147050}
+  - component: {fileID: 6246067308058147052}
   - component: {fileID: 6246067308058147049}
   m_Layer: 0
   m_Name: AnteBrazoManoR_Bone
@@ -3671,7 +3747,7 @@ ConfigurableJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: -0.000000008381903, y: 0.014805586, z: -0.0000000046566133}
+  m_ConnectedAnchor: {x: -0.000000003259629, y: 0.014805586, z: -0.0000000016298145}
   serializedVersion: 3
   m_SecondaryAxis: {x: 0, y: 1, z: 0}
   m_XMotion: 0
@@ -3734,14 +3810,14 @@ ConfigurableJoint:
   m_RotationDriveMode: 0
   m_AngularXDrive:
     serializedVersion: 4
-    positionSpring: 0
-    positionDamper: 0
+    positionSpring: 10
+    positionDamper: 4
     maximumForce: 3.4028233e+38
     useAcceleration: 0
   m_AngularYZDrive:
     serializedVersion: 4
-    positionSpring: 0
-    positionDamper: 0
+    positionSpring: 10
+    positionDamper: 4
     maximumForce: 3.4028233e+38
     useAcceleration: 0
   m_SlerpDrive:
@@ -3811,6 +3887,20 @@ CapsuleCollider:
   m_Height: 0.022450225
   m_Direction: 1
   m_Center: {x: -0.000000005737697, y: 0.010848648, z: -0.000000011826346}
+--- !u!114 &6246067308058147052
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6052572027673501829}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ba57f15760a03ce48a4643e13e6346d9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 9083669389397650733}
+  joint: {fileID: 6246067308058147049}
 --- !u!4 &6294316936691048030
 Transform:
   m_ObjectHideFlags: 0
@@ -3852,7 +3942,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &6325824964167879822
 GameObject:
   m_ObjectHideFlags: 0
@@ -3870,7 +3960,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &6386985457760719031
 GameObject:
   m_ObjectHideFlags: 0
@@ -3882,6 +3972,7 @@ GameObject:
   - component: {fileID: 6640724870126209291}
   - component: {fileID: 6640724870126209294}
   - component: {fileID: 6640724870126209292}
+  - component: {fileID: 6640724870126209295}
   - component: {fileID: 6640724870126209293}
   m_Layer: 0
   m_Name: FemurL_Bone
@@ -3901,6 +3992,7 @@ GameObject:
   - component: {fileID: 9221181632339200923}
   - component: {fileID: 9221181632339200926}
   - component: {fileID: 9221181632339200925}
+  - component: {fileID: 9221181632339200927}
   - component: {fileID: 9221181632339200924}
   m_Layer: 0
   m_Name: AnteBrazoManoL_Bone
@@ -3965,7 +4057,7 @@ ConfigurableJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: -0.0055388147, y: -0.0041951267, z: 0.004416798}
+  m_ConnectedAnchor: {x: -0.0060808626, y: 0.0027360173, z: 0.0020844697}
   serializedVersion: 3
   m_SecondaryAxis: {x: 0, y: 1, z: 0}
   m_XMotion: 0
@@ -4028,14 +4120,14 @@ ConfigurableJoint:
   m_RotationDriveMode: 0
   m_AngularXDrive:
     serializedVersion: 4
-    positionSpring: 0
-    positionDamper: 0
+    positionSpring: 30
+    positionDamper: 5
     maximumForce: 3.4028233e+38
     useAcceleration: 0
   m_AngularYZDrive:
     serializedVersion: 4
-    positionSpring: 0
-    positionDamper: 0
+    positionSpring: 30
+    positionDamper: 5
     maximumForce: 3.4028233e+38
     useAcceleration: 0
   m_SlerpDrive:
@@ -4078,6 +4170,20 @@ CapsuleCollider:
   m_Height: 0.022450225
   m_Direction: 1
   m_Center: {x: -0.000000005737697, y: 0.010848648, z: -0.000000011826346}
+--- !u!114 &6640724870126209295
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6386985457760719031}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ba57f15760a03ce48a4643e13e6346d9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 8397322303308242126}
+  joint: {fileID: 6640724870126209293}
 --- !u!4 &6661637945058487187
 Transform:
   m_ObjectHideFlags: 0
@@ -4281,7 +4387,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!33 &6688937956905125191
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -4387,7 +4493,7 @@ ConfigurableJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: -9.926819e-10, y: 0.010000002, z: -0.000000006519258}
+  m_ConnectedAnchor: {x: -3.3771655e-10, y: 0.01, z: -0.0000000018626451}
   serializedVersion: 3
   m_SecondaryAxis: {x: 0, y: 1, z: 0}
   m_XMotion: 0
@@ -4450,14 +4556,14 @@ ConfigurableJoint:
   m_RotationDriveMode: 0
   m_AngularXDrive:
     serializedVersion: 4
-    positionSpring: 50
-    positionDamper: 0
+    positionSpring: 1000
+    positionDamper: 20
     maximumForce: 3.4028233e+38
     useAcceleration: 0
   m_AngularYZDrive:
     serializedVersion: 4
-    positionSpring: 50
-    positionDamper: 0
+    positionSpring: 1000
+    positionDamper: 20
     maximumForce: 3.4028233e+38
     useAcceleration: 0
   m_SlerpDrive:
@@ -4471,7 +4577,7 @@ ConfigurableJoint:
   m_ProjectionAngle: 180
   m_ConfiguredInWorldSpace: 0
   m_SwapBodies: 0
-  m_BreakForce: Infinity
+  m_BreakForce: 500
   m_BreakTorque: Infinity
   m_EnableCollision: 0
   m_EnablePreprocessing: 1
@@ -4600,6 +4706,7 @@ GameObject:
   - component: {fileID: 2117342454264179449}
   - component: {fileID: 7606888941801153042}
   - component: {fileID: 7606888941801153041}
+  - component: {fileID: 7606888941801153043}
   - component: {fileID: 7606888941801153040}
   m_Layer: 0
   m_Name: Craneo_Bone
@@ -4620,7 +4727,7 @@ ConfigurableJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: -4.656613e-10, y: 0.028844006, z: -0.0000000018626454}
+  m_ConnectedAnchor: {x: 3.4924597e-10, y: 0.02884401, z: 0.000000006519259}
   serializedVersion: 3
   m_SecondaryAxis: {x: 0, y: 1, z: 0}
   m_XMotion: 0
@@ -4683,14 +4790,14 @@ ConfigurableJoint:
   m_RotationDriveMode: 0
   m_AngularXDrive:
     serializedVersion: 4
-    positionSpring: 0
-    positionDamper: 0
+    positionSpring: 20
+    positionDamper: 4
     maximumForce: 3.4028233e+38
     useAcceleration: 0
   m_AngularYZDrive:
     serializedVersion: 4
-    positionSpring: 0
-    positionDamper: 0
+    positionSpring: 20
+    positionDamper: 4
     maximumForce: 3.4028233e+38
     useAcceleration: 0
   m_SlerpDrive:
@@ -4758,6 +4865,20 @@ SphereCollider:
   serializedVersion: 3
   m_Radius: 0.0055
   m_Center: {x: 0, y: 0.002, z: -0.0004}
+--- !u!114 &7606888941801153043
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7606888941801153039}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ba57f15760a03ce48a4643e13e6346d9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 3874115543038148412}
+  joint: {fileID: 7606888941801153040}
 --- !u!23 &7626015775993354156
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -5196,7 +5317,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5273136979144124012}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.192872, y: 0.009091024, z: -0.03196411, w: 0.98066103}
+  m_LocalRotation: {x: 0.20850903, y: 0.008579374, z: -0.03210522, w: 0.97745574}
   m_LocalPosition: {x: -0, y: 0.01, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 0.99999994}
   m_ConstrainProportionsScale: 0
@@ -5206,7 +5327,7 @@ Transform:
   - {fileID: 4472709671366031136}
   - {fileID: 1809946115009071610}
   m_Father: {fileID: 5105146034189696277}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 24.09, y: 0.212, z: -3.717}
 --- !u!1 &9020606392520736912
 GameObject:
   m_ObjectHideFlags: 0
@@ -5224,7 +5345,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!33 &9070803495198448785
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -5259,6 +5380,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7960340438928353488}
   - component: {fileID: 9118420885909215590}
+  - component: {fileID: 9118420885909215591}
   - component: {fileID: 9118420885909215588}
   - component: {fileID: 9118420885909215589}
   m_Layer: 0
@@ -5307,7 +5429,7 @@ ConfigurableJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 0.0029805403, y: -0.1129477, z: 0.017941713}
+  m_ConnectedAnchor: {x: 0.00298054, y: -0.13494767, z: 0.017941803}
   serializedVersion: 3
   m_SecondaryAxis: {x: 0, y: 1, z: 0}
   m_XMotion: 0
@@ -5370,14 +5492,14 @@ ConfigurableJoint:
   m_RotationDriveMode: 0
   m_AngularXDrive:
     serializedVersion: 4
-    positionSpring: 0
-    positionDamper: 0
+    positionSpring: 100
+    positionDamper: 4
     maximumForce: 3.4028233e+38
     useAcceleration: 0
   m_AngularYZDrive:
     serializedVersion: 4
-    positionSpring: 0
-    positionDamper: 0
+    positionSpring: 100
+    positionDamper: 4
     maximumForce: 3.4028233e+38
     useAcceleration: 0
   m_SlerpDrive:
@@ -5420,6 +5542,20 @@ CapsuleCollider:
   m_Height: 0.016491713
   m_Direction: 1
   m_Center: {x: 0.00015714596, y: 0.005943464, z: 0.0000000010235328}
+--- !u!114 &9118420885909215591
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9118420885909215587}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ba57f15760a03ce48a4643e13e6346d9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 5105146034189696277}
+  joint: {fileID: 9118420885909215589}
 --- !u!33 &9157750527669321052
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -5492,7 +5628,7 @@ ConfigurableJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 0.0000000018626454, y: 0.014191949, z: 9.313226e-10}
+  m_ConnectedAnchor: {x: 0.0000000018626451, y: 0.014191951, z: -0.0000000017462298}
   serializedVersion: 3
   m_SecondaryAxis: {x: 0, y: 1, z: 0}
   m_XMotion: 0
@@ -5555,14 +5691,14 @@ ConfigurableJoint:
   m_RotationDriveMode: 0
   m_AngularXDrive:
     serializedVersion: 4
-    positionSpring: 0
-    positionDamper: 0
+    positionSpring: 10
+    positionDamper: 4
     maximumForce: 3.4028233e+38
     useAcceleration: 0
   m_AngularYZDrive:
     serializedVersion: 4
-    positionSpring: 0
-    positionDamper: 0
+    positionSpring: 10
+    positionDamper: 4
     maximumForce: 3.4028233e+38
     useAcceleration: 0
   m_SlerpDrive:
@@ -5632,6 +5768,20 @@ CapsuleCollider:
   m_Height: 0.022450225
   m_Direction: 1
   m_Center: {x: -0.000000005737697, y: 0.010848648, z: -0.000000011826346}
+--- !u!114 &9221181632339200927
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6413657967705548029}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ba57f15760a03ce48a4643e13e6346d9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 6294316936691048030}
+  joint: {fileID: 9221181632339200924}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
