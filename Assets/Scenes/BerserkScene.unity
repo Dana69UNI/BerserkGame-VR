@@ -177,7 +177,7 @@ Transform:
   m_GameObject: {fileID: 768975238}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.0009542, y: 0.544, z: 2.4103}
+  m_LocalPosition: {x: -0.0009542, y: 0.544, z: 4.77}
   m_LocalScale: {x: 0.80908, y: 0.80908, z: 0.80908}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -204,6 +204,9 @@ MonoBehaviour:
   angulo: {x: 0, y: 0, z: 0, w: 0}
   grado: 0
   tiempoMovimiento: 0
+  target: {fileID: 0}
+  atacando: 0
+  campoVision: 90
 --- !u!95 &768975242
 Animator:
   serializedVersion: 5
@@ -750,7 +753,7 @@ ConfigurableJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 0, y: 0, z: 0}
+  m_ConnectedAnchor: {x: -0.5721298, y: -0.07833521, z: -0.026014276}
   serializedVersion: 3
   m_SecondaryAxis: {x: 0, y: 1, z: 0}
   m_XMotion: 2
@@ -990,7 +993,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -0.10144261, y: -0.339063, z: 3.1280544}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 9.839895, y: 9.839895, z: 9.839895}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
