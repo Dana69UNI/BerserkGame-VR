@@ -409,7 +409,7 @@ public class IAEnemigo : MonoBehaviour
 
     void Start()
     {
-        ani = GetComponent<Animator>();
+
         cronometro = 0f;
         rutina = 0;
         tiempoMovimiento = 0f;
@@ -425,20 +425,20 @@ public class IAEnemigo : MonoBehaviour
 
         float distanciaJugador = direccionJugador.magnitude;
 
-        // Calcular ángulo entre el frente del enemigo y la dirección al jugador
-        float anguloJugador = Vector3.Angle(transform.forward, direccionJugador.normalized);
+        //// Calcular ángulo entre el frente del enemigo y la dirección al jugador
+        //float anguloJugador = Vector3.Angle(transform.forward, direccionJugador.normalized);
 
-        bool jugadorEnCampoVision = anguloJugador <= campoVision / 2f;
+        //bool jugadorEnCampoVision = anguloJugador <= campoVision / 2f;
 
-        if (distanciaJugador <= 5 && jugadorEnCampoVision)
-        {
-            // Jugador detectado en rango y campo de visión
+        //if (distanciaJugador <= 5 && jugadorEnCampoVision)
+        //{
+        //    // Jugador detectado en rango y campo de visión
 
             if (distanciaJugador > 1)
             {
                 // Perseguir jugador
                 Quaternion rotacion = Quaternion.LookRotation(direccionJugador);
-                transform.rotation = Quaternion.RotateTowards(transform.rotation, rotacion, 200 * Time.deltaTime);
+                transform.rotation = Quaternion.RotateTowards(transform.rotation, rotacion, 100 * Time.deltaTime);
 
                 ani.SetBool("Caminar", true);
                 transform.Translate(Vector3.forward * 2 * Time.deltaTime);
@@ -454,48 +454,48 @@ public class IAEnemigo : MonoBehaviour
                 atacando = true;
             }
         }
-        else
-        {
-            // Patrullar
+        //else
+        //{
+        //    // Patrullar
 
-            cronometro += Time.deltaTime;
+        //    cronometro += Time.deltaTime;
 
-            switch (rutina)
-            {
-                case 0:
-                    ani.SetBool("Caminar", false);
-                    if (cronometro >= Random.Range(1f, 2f))
-                    {
-                        rutina = 1;
-                        cronometro = 0;
-                    }
-                    break;
+        //    switch (rutina)
+        //    {
+        //        case 0:
+        //            ani.SetBool("Caminar", false);
+        //            if (cronometro >= Random.Range(1f, 2f))
+        //            {
+        //                rutina = 1;
+        //                cronometro = 0;
+        //            }
+        //            break;
 
-                case 1:
-                    grado = Random.Range(0, 360);
-                    angulo = Quaternion.Euler(0, grado, 0);
-                    rutina = 2;
-                    tiempoMovimiento = Random.Range(2f, 4f);
-                    cronometro = 0;
-                    break;
+        //        case 1:
+        //            grado = Random.Range(0, 360);
+        //            angulo = Quaternion.Euler(0, grado, 0);
+        //            rutina = 2;
+        //            tiempoMovimiento = Random.Range(2f, 4f);
+        //            cronometro = 0;
+        //            break;
 
-                case 2:
-                    transform.rotation = Quaternion.RotateTowards(transform.rotation, angulo, 100 * Time.deltaTime);
-                    transform.Translate(Vector3.forward * 1 * Time.deltaTime);
-                    ani.SetBool("Caminar", true);
+        //        case 2:
+        //            transform.rotation = Quaternion.RotateTowards(transform.rotation, angulo, 100 * Time.deltaTime);
+        //            transform.Translate(Vector3.forward * 1 * Time.deltaTime);
+        //            ani.SetBool("Caminar", true);
 
-                    if (cronometro >= tiempoMovimiento)
-                    {
-                        rutina = 0;
-                        cronometro = 0;
-                    }
-                    break;
-            }
+        //            if (cronometro >= tiempoMovimiento)
+        //            {
+        //                rutina = 0;
+        //                cronometro = 0;
+        //            }
+        //            break;
+        //    }
 
-            ani.SetBool("Ataque", false);
-            atacando = false;
-        }
-    }
+        //    ani.SetBool("Ataque", false);
+        //    atacando = false;
+    //    }
+    //}
 
     void Update()
     {
