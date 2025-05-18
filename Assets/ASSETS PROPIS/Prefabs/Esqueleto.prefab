@@ -429,7 +429,7 @@ ConfigurableJoint:
   m_ProjectionAngle: 180
   m_ConfiguredInWorldSpace: 0
   m_SwapBodies: 0
-  m_BreakForce: 200
+  m_BreakForce: 600
   m_BreakTorque: Infinity
   m_EnableCollision: 0
   m_EnablePreprocessing: 1
@@ -556,7 +556,7 @@ MonoBehaviour:
   m_StartingSingleGrabTransformers: []
   m_StartingMultipleGrabTransformers: []
   m_AddDefaultGrabTransformers: 1
-  m_FarAttachMode: 0
+  m_FarAttachMode: 1
 --- !u!114 &2484251670594093523
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -966,7 +966,7 @@ ConfigurableJoint:
   m_ProjectionAngle: 180
   m_ConfiguredInWorldSpace: 0
   m_SwapBodies: 0
-  m_BreakForce: 200
+  m_BreakForce: 600
   m_BreakTorque: Infinity
   m_EnableCollision: 0
   m_EnablePreprocessing: 1
@@ -1093,7 +1093,7 @@ MonoBehaviour:
   m_StartingSingleGrabTransformers: []
   m_StartingMultipleGrabTransformers: []
   m_AddDefaultGrabTransformers: 1
-  m_FarAttachMode: 0
+  m_FarAttachMode: 1
 --- !u!114 &8770535530211294249
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1732,7 +1732,7 @@ MonoBehaviour:
   m_StartingSingleGrabTransformers: []
   m_StartingMultipleGrabTransformers: []
   m_AddDefaultGrabTransformers: 1
-  m_FarAttachMode: 0
+  m_FarAttachMode: 1
 --- !u!114 &1665773174177634946
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1757,9 +1757,12 @@ GameObject:
   - component: {fileID: 4913054629204971195}
   - component: {fileID: 6690116599641504451}
   - component: {fileID: 3667522204064027890}
+  - component: {fileID: 2482254895000615832}
+  - component: {fileID: 5712431554439904641}
+  - component: {fileID: 1240507720820208182}
   m_Layer: 0
   m_Name: er
-  m_TagString: Untagged
+  m_TagString: Sword
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1772,12 +1775,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1279173264129046366}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.00249, y: -0.00317, z: 0.00884}
-  m_LocalScale: {x: 0.00096947, y: 0.004427262, z: 0.00096947}
+  m_LocalRotation: {x: 0.3625099, y: -0.5410875, z: 0.70519716, w: 0.2801926}
+  m_LocalPosition: {x: 0.012054982, y: 0.022255555, z: 0.0065593896}
+  m_LocalScale: {x: 0.0042612078, y: 0.019459574, z: 0.004261207}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 6406385513595380702}
+  m_Father: {fileID: 330603696374611650}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &4913054629204971195
 MeshFilter:
@@ -1844,7 +1847,7 @@ CapsuleCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -1852,6 +1855,148 @@ CapsuleCollider:
   m_Height: 2
   m_Direction: 1
   m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940697}
+--- !u!54 &2482254895000615832
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1279173264129046366}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 2
+--- !u!114 &5712431554439904641
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1279173264129046366}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fc5b3125cdc4c2a458762be6f704edf5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rb: {fileID: 2482254895000615832}
+--- !u!153 &1240507720820208182
+ConfigurableJoint:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1279173264129046366}
+  m_ConnectedBody: {fileID: 9043680061122501253}
+  m_ConnectedArticulationBody: {fileID: 0}
+  m_Anchor: {x: 0, y: 1.0000005, z: 0}
+  m_Axis: {x: 1, y: 0, z: 0}
+  m_AutoConfigureConnectedAnchor: 1
+  m_ConnectedAnchor: {x: 0, y: 0, z: 0}
+  serializedVersion: 3
+  m_SecondaryAxis: {x: 0, y: 1, z: 0}
+  m_XMotion: 0
+  m_YMotion: 0
+  m_ZMotion: 0
+  m_AngularXMotion: 0
+  m_AngularYMotion: 0
+  m_AngularZMotion: 0
+  m_LinearLimitSpring:
+    spring: 0
+    damper: 0
+  m_LinearLimit:
+    limit: 0
+    bounciness: 0
+    contactDistance: 0
+  m_AngularXLimitSpring:
+    spring: 0
+    damper: 0
+  m_LowAngularXLimit:
+    limit: 0
+    bounciness: 0
+    contactDistance: 0
+  m_HighAngularXLimit:
+    limit: 0
+    bounciness: 0
+    contactDistance: 0
+  m_AngularYZLimitSpring:
+    spring: 0
+    damper: 0
+  m_AngularYLimit:
+    limit: 0
+    bounciness: 0
+    contactDistance: 0
+  m_AngularZLimit:
+    limit: 0
+    bounciness: 0
+    contactDistance: 0
+  m_TargetPosition: {x: 0, y: 0, z: 0}
+  m_TargetVelocity: {x: 0, y: 0, z: 0}
+  m_XDrive:
+    serializedVersion: 4
+    positionSpring: 0
+    positionDamper: 0
+    maximumForce: 3.4028233e+38
+    useAcceleration: 0
+  m_YDrive:
+    serializedVersion: 4
+    positionSpring: 0
+    positionDamper: 0
+    maximumForce: 3.4028233e+38
+    useAcceleration: 0
+  m_ZDrive:
+    serializedVersion: 4
+    positionSpring: 0
+    positionDamper: 0
+    maximumForce: 3.4028233e+38
+    useAcceleration: 0
+  m_TargetRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_TargetAngularVelocity: {x: 0, y: 0, z: 0}
+  m_RotationDriveMode: 0
+  m_AngularXDrive:
+    serializedVersion: 4
+    positionSpring: 0
+    positionDamper: 0
+    maximumForce: 3.4028233e+38
+    useAcceleration: 0
+  m_AngularYZDrive:
+    serializedVersion: 4
+    positionSpring: 0
+    positionDamper: 0
+    maximumForce: 3.4028233e+38
+    useAcceleration: 0
+  m_SlerpDrive:
+    serializedVersion: 4
+    positionSpring: 0
+    positionDamper: 0
+    maximumForce: 3.4028233e+38
+    useAcceleration: 0
+  m_ProjectionMode: 0
+  m_ProjectionDistance: 0.1
+  m_ProjectionAngle: 180
+  m_ConfiguredInWorldSpace: 0
+  m_SwapBodies: 0
+  m_BreakForce: Infinity
+  m_BreakTorque: Infinity
+  m_EnableCollision: 0
+  m_EnablePreprocessing: 1
+  m_MassScale: 1
+  m_ConnectedMassScale: 1
 --- !u!1 &1711920274622365190
 GameObject:
   m_ObjectHideFlags: 0
@@ -2180,7 +2325,7 @@ MonoBehaviour:
   m_StartingSingleGrabTransformers: []
   m_StartingMultipleGrabTransformers: []
   m_AddDefaultGrabTransformers: 1
-  m_FarAttachMode: 0
+  m_FarAttachMode: 1
 --- !u!114 &1555452765149039445
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2821,7 +2966,7 @@ MonoBehaviour:
   m_StartingSingleGrabTransformers: []
   m_StartingMultipleGrabTransformers: []
   m_AddDefaultGrabTransformers: 1
-  m_FarAttachMode: 0
+  m_FarAttachMode: 1
 --- !u!114 &3004127191596842775
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3119,7 +3264,7 @@ MonoBehaviour:
   m_StartingSingleGrabTransformers: []
   m_StartingMultipleGrabTransformers: []
   m_AddDefaultGrabTransformers: 1
-  m_FarAttachMode: 0
+  m_FarAttachMode: 1
 --- !u!114 &6398413750246974075
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3896,7 +4041,7 @@ ConfigurableJoint:
   m_ProjectionAngle: 180
   m_ConfiguredInWorldSpace: 0
   m_SwapBodies: 0
-  m_BreakForce: 300
+  m_BreakForce: 600
   m_BreakTorque: Infinity
   m_EnableCollision: 0
   m_EnablePreprocessing: 1
@@ -4023,7 +4168,7 @@ MonoBehaviour:
   m_StartingSingleGrabTransformers: []
   m_StartingMultipleGrabTransformers: []
   m_AddDefaultGrabTransformers: 1
-  m_FarAttachMode: 0
+  m_FarAttachMode: 1
 --- !u!114 &3475967522985963974
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4727,7 +4872,7 @@ MonoBehaviour:
   m_StartingSingleGrabTransformers: []
   m_StartingMultipleGrabTransformers: []
   m_AddDefaultGrabTransformers: 1
-  m_FarAttachMode: 0
+  m_FarAttachMode: 1
 --- !u!114 &5983773649795734791
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4895,6 +5040,7 @@ Transform:
   m_LocalScale: {x: 0.99999994, y: 0.9999999, z: 0.9999998}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 7400732316742567094}
   - {fileID: 6406385513595380702}
   m_Father: {fileID: 6239926318365376473}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -5058,7 +5204,7 @@ ConfigurableJoint:
   m_ProjectionAngle: 180
   m_ConfiguredInWorldSpace: 0
   m_SwapBodies: 0
-  m_BreakForce: 300
+  m_BreakForce: 600
   m_BreakTorque: Infinity
   m_EnableCollision: 0
   m_EnablePreprocessing: 1
@@ -5185,7 +5331,7 @@ MonoBehaviour:
   m_StartingSingleGrabTransformers: []
   m_StartingMultipleGrabTransformers: []
   m_AddDefaultGrabTransformers: 1
-  m_FarAttachMode: 0
+  m_FarAttachMode: 1
 --- !u!114 &3765439835217767361
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5228,8 +5374,7 @@ Transform:
   m_LocalPosition: {x: -0.00065219594, y: 0.05618266, z: -0.016048968}
   m_LocalScale: {x: 4.395399, y: 4.395399, z: 4.3953986}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 7400732316742567094}
+  m_Children: []
   m_Father: {fileID: 330603696374611650}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &153649173001203117
@@ -5873,7 +6018,7 @@ MonoBehaviour:
   m_StartingSingleGrabTransformers: []
   m_StartingMultipleGrabTransformers: []
   m_AddDefaultGrabTransformers: 1
-  m_FarAttachMode: 0
+  m_FarAttachMode: 1
 --- !u!114 &2014732729657275830
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6295,7 +6440,7 @@ MonoBehaviour:
   m_StartingSingleGrabTransformers: []
   m_StartingMultipleGrabTransformers: []
   m_AddDefaultGrabTransformers: 1
-  m_FarAttachMode: 0
+  m_FarAttachMode: 1
 --- !u!114 &3662954327857937607
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6655,7 +6800,7 @@ MonoBehaviour:
   m_StartingSingleGrabTransformers: []
   m_StartingMultipleGrabTransformers: []
   m_AddDefaultGrabTransformers: 1
-  m_FarAttachMode: 0
+  m_FarAttachMode: 1
 --- !u!114 &4399824386858898965
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7132,7 +7277,7 @@ MonoBehaviour:
   m_StartingSingleGrabTransformers: []
   m_StartingMultipleGrabTransformers: []
   m_AddDefaultGrabTransformers: 1
-  m_FarAttachMode: 0
+  m_FarAttachMode: 1
 --- !u!114 &307661079349994404
 MonoBehaviour:
   m_ObjectHideFlags: 0
