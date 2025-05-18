@@ -10,6 +10,7 @@ public class SkeletonDying : MonoBehaviour
     public ConfigurableJoint StabilizerJoint;
     private IAEnemigo IAEnemigo;
     public Animator Animator;
+    private float deathTime = 0f;
     // Start is called before the first frame update
     void Start()
     {
@@ -25,6 +26,7 @@ public class SkeletonDying : MonoBehaviour
             Destroy(StabilizerJoint);
             Destroy(IAEnemigo);
             Destroy(Animator);
+            StartCoroutine(Fade());
         }
         if(TorsoJoint == null)
         {
@@ -32,6 +34,20 @@ public class SkeletonDying : MonoBehaviour
             Destroy(StabilizerJoint);
             Destroy(IAEnemigo);
             Destroy(Animator);
+            StartCoroutine(Fade());
+        }
+    }
+
+    IEnumerator Fade()
+    {
+       if(deathTime < 200f)
+        {
+            deathTime += Time.deltaTime;
+            yield return null;
+        }
+       else
+        {
+            Destroy(gameObject);
         }
     }
 }
