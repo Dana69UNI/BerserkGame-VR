@@ -427,7 +427,7 @@ ConfigurableJoint:
   m_ProjectionAngle: 180
   m_ConfiguredInWorldSpace: 0
   m_SwapBodies: 0
-  m_BreakForce: 400
+  m_BreakForce: 200
   m_BreakTorque: Infinity
   m_EnableCollision: 0
   m_EnablePreprocessing: 1
@@ -828,7 +828,7 @@ ConfigurableJoint:
   m_ProjectionAngle: 180
   m_ConfiguredInWorldSpace: 0
   m_SwapBodies: 0
-  m_BreakForce: 400
+  m_BreakForce: 200
   m_BreakTorque: Infinity
   m_EnableCollision: 0
   m_EnablePreprocessing: 1
@@ -924,7 +924,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 835491866669616195}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 399f0fb124051c344b30d0e805440d37, type: 3}
   m_Name: 
@@ -1514,7 +1514,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1711920274622365190}
   serializedVersion: 4
-  m_Mass: 10
+  m_Mass: 100
   m_Drag: 0
   m_AngularDrag: 0.05
   m_CenterOfMass: {x: 0, y: 0, z: 0}
@@ -1643,7 +1643,7 @@ ConfigurableJoint:
   m_ProjectionAngle: 180
   m_ConfiguredInWorldSpace: 0
   m_SwapBodies: 0
-  m_BreakForce: 600
+  m_BreakForce: 1500
   m_BreakTorque: Infinity
   m_EnableCollision: 0
   m_EnablePreprocessing: 1
@@ -3078,7 +3078,7 @@ ConfigurableJoint:
   m_ProjectionAngle: 180
   m_ConfiguredInWorldSpace: 0
   m_SwapBodies: 0
-  m_BreakForce: Infinity
+  m_BreakForce: 300
   m_BreakTorque: Infinity
   m_EnableCollision: 0
   m_EnablePreprocessing: 1
@@ -3968,7 +3968,7 @@ ConfigurableJoint:
   m_ProjectionAngle: 180
   m_ConfiguredInWorldSpace: 0
   m_SwapBodies: 0
-  m_BreakForce: Infinity
+  m_BreakForce: 300
   m_BreakTorque: Infinity
   m_EnableCollision: 0
   m_EnablePreprocessing: 1
@@ -4282,6 +4282,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3613124855408034598}
+  - component: {fileID: 5096958059474019596}
   m_Layer: 0
   m_Name: Esqueleto
   m_TagString: Untagged
@@ -4307,6 +4308,23 @@ Transform:
   - {fileID: 454231790400101058}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5096958059474019596
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8026512891566990074}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 399f0fb124051c344b30d0e805440d37, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CraniumJoint: {fileID: 452475844074902798}
+  TorsoJoint: {fileID: 1998680879079961342}
+  PelvisJoint: {fileID: 7134244664998638956}
+  StabilizerJoint: {fileID: 8402693484929381487}
+  Animator: {fileID: 4933186829745425315}
 --- !u!1 &8367730122691939242
 GameObject:
   m_ObjectHideFlags: 0
@@ -4502,7 +4520,7 @@ ConfigurableJoint:
   m_ProjectionAngle: 180
   m_ConfiguredInWorldSpace: 0
   m_SwapBodies: 0
-  m_BreakForce: 400
+  m_BreakForce: 800
   m_BreakTorque: Infinity
   m_EnableCollision: 0
   m_EnablePreprocessing: 1

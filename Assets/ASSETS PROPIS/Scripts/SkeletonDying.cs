@@ -40,7 +40,7 @@ public class SkeletonDying : MonoBehaviour
 
     IEnumerator Fade()
     {
-       if(deathTime < 200f)
+       if(deathTime < 60f)
         {
             deathTime += Time.deltaTime;
             yield return null;
