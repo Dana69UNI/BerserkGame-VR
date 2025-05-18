@@ -70,10 +70,19 @@ AnimationClip:
         inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
         outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
       - serializedVersion: 3
+        time: 0.55
+        value: {x: -50.002, y: 122.083, z: -225.892}
+        inSlope: {x: 0, y: 0, z: -93.89629}
+        outSlope: {x: 0, y: 0, z: -93.89629}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+      - serializedVersion: 3
         time: 1.35
         value: {x: -32.36, y: 101.708, z: -289.353}
-        inSlope: {x: 0, y: 0, z: 0}
-        outSlope: {x: 0, y: 0, z: 0}
+        inSlope: {x: 30.637272, y: -33.630005, z: 0}
+        outSlope: {x: 30.637272, y: -33.630005, z: 0}
         tangentMode: 0
         weightedMode: 0
         inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
@@ -429,10 +438,19 @@ AnimationClip:
         inWeight: 0.33333334
         outWeight: 0.33333334
       - serializedVersion: 3
-        time: 1.35
-        value: -32.36
+        time: 0.55
+        value: -50.002
         inSlope: 0
         outSlope: 0
+        tangentMode: 136
+        weightedMode: 0
+        inWeight: 0.33333334
+        outWeight: 0.33333334
+      - serializedVersion: 3
+        time: 1.35
+        value: -32.36
+        inSlope: 30.637272
+        outSlope: 30.637272
         tangentMode: 136
         weightedMode: 0
         inWeight: 0.33333334
@@ -477,10 +495,19 @@ AnimationClip:
         inWeight: 0.33333334
         outWeight: 0.33333334
       - serializedVersion: 3
-        time: 1.35
-        value: 101.708
+        time: 0.55
+        value: 122.083
         inSlope: 0
         outSlope: 0
+        tangentMode: 136
+        weightedMode: 0
+        inWeight: 0.33333334
+        outWeight: 0.33333334
+      - serializedVersion: 3
+        time: 1.35
+        value: 101.708
+        inSlope: -33.630005
+        outSlope: -33.630005
         tangentMode: 136
         weightedMode: 0
         inWeight: 0.33333334
@@ -520,6 +547,15 @@ AnimationClip:
         value: -162.593
         inSlope: 0
         outSlope: 0
+        tangentMode: 136
+        weightedMode: 0
+        inWeight: 0.33333334
+        outWeight: 0.33333334
+      - serializedVersion: 3
+        time: 0.55
+        value: -225.892
+        inSlope: -93.89629
+        outSlope: -93.89629
         tangentMode: 136
         weightedMode: 0
         inWeight: 0.33333334
@@ -892,7 +928,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalEulerAngles.z
-    path: Armature/Pelvis_Bone/Torso_Bone/BrazoR_Bone
+    path: Armature/Pelvis_Bone/Torso_Bone
     classID: 4
     script: {fileID: 0}
     flags: 0
@@ -904,7 +940,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalEulerAngles.y
-    path: Armature/Pelvis_Bone/Torso_Bone/BrazoR_Bone
+    path: Armature/Pelvis_Bone/Torso_Bone
     classID: 4
     script: {fileID: 0}
     flags: 0
@@ -916,7 +952,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalEulerAngles.x
-    path: Armature/Pelvis_Bone/Torso_Bone/BrazoR_Bone
+    path: Armature/Pelvis_Bone/Torso_Bone
     classID: 4
     script: {fileID: 0}
     flags: 0
@@ -1036,7 +1072,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalEulerAngles.x
-    path: Armature/Pelvis_Bone/Torso_Bone
+    path: Armature/Pelvis_Bone/Torso_Bone/BrazoR_Bone
     classID: 4
     script: {fileID: 0}
     flags: 0
@@ -1048,7 +1084,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalEulerAngles.y
-    path: Armature/Pelvis_Bone/Torso_Bone
+    path: Armature/Pelvis_Bone/Torso_Bone/BrazoR_Bone
     classID: 4
     script: {fileID: 0}
     flags: 0
@@ -1060,7 +1096,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalEulerAngles.z
-    path: Armature/Pelvis_Bone/Torso_Bone
+    path: Armature/Pelvis_Bone/Torso_Bone/BrazoR_Bone
     classID: 4
     script: {fileID: 0}
     flags: 0
