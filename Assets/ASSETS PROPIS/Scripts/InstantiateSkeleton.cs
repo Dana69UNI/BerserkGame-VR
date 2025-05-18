@@ -4,12 +4,32 @@ using UnityEngine;
 
 public class InstantiateSkeleton : MonoBehaviour
 {
-    public GameObject prefab;         // El prefab a instanciar
-    public float spawnInterval = 10f; // Intervalo de tiempo en segundos
-    public Transform spawnPoint;      // Punto donde se instanciará el prefab
+    public GameObject prefab;         
+    public float spawnInterval = 10f;
+   
+
+    [field: Header("SpawnPoint")]
+    [field: SerializeField] public Transform spawnPoint1 { get; private set; }
+    [field: Header("SpawnPoint")]
+    [field: SerializeField] public Transform spawnPoint2 { get; private set; }
+    [field: Header("SpawnPoint")]
+    [field: SerializeField] public Transform spawnPoint3 { get; private set; }
+    [field: Header("SpawnPoint")]
+    [field: SerializeField] public Transform spawnPoint4 { get; private set; }
+    [field: Header("SpawnPoint")]
+    [field: SerializeField] public Transform spawnPoint5 { get; private set; }
+    [field: Header("SpawnPoint")]
+    [field: SerializeField] public Transform spawnPoint6 { get; private set; }
+
+    private Transform[] spawnPoints;
+
+    private int selectedSpawn;
 
     private float timer;
-
+    private void Start()
+    {
+        spawnPoints = new Transform[] { spawnPoint1, spawnPoint2, spawnPoint3, spawnPoint4, spawnPoint5, spawnPoint6 };
+    }
     void Update()
     {
         timer += Time.deltaTime;
@@ -25,10 +45,9 @@ public class InstantiateSkeleton : MonoBehaviour
     {
         if (prefab != null)
         {
-            Vector3 position = spawnPoint != null ? spawnPoint.position : transform.position;
-            Quaternion rotation = spawnPoint != null ? spawnPoint.rotation : Quaternion.identity;
+            selectedSpawn = UnityEngine.Random.Range(0, 6);
 
-            Instantiate(prefab, position, rotation);
+            Instantiate(prefab, spawnPoints[selectedSpawn]);
         }
         else
         {
