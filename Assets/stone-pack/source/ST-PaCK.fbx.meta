@@ -3,7 +3,37 @@ guid: 7ab3b167094056d4dbd15be6b646d50a
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: BiG
+    second: {fileID: 2100000, guid: af4469513c5fc554d9d16f107eefd48d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MID
+    second: {fileID: 2100000, guid: 2aabf8613756d0a419f19fd8fe8e4013, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Runic
+    second: {fileID: 2100000, guid: 203a6bac2dcd7764ebcc8ae1ce8530bc, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: SMall
+    second: {fileID: 2100000, guid: f577910eceb09114d89cbe99aa348ec2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: p1
+    second: {fileID: 2100000, guid: c7c4d103407443d49bc6ddae63705edf, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: p2
+    second: {fileID: 2100000, guid: 755f757d64b35e04c86483a4e94a0019, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
