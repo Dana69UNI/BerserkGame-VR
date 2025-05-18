@@ -17,6 +17,9 @@ public class charAnimationScript : MonoBehaviour
 
     private void Update()
     {
-        joint.SetTargetRotationLocal(target.rotation, startingRotation);
+        if (joint != null)
+        {
+            joint.SetTargetRotationLocal(target.rotation, startingRotation);
+        }
     }
 }
