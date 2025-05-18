@@ -691,6 +691,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 678547279448731208, guid: c7f7e4eed6c42bc4c9ae57141fd8531c, type: 3}
+      propertyPath: m_FarAttachMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1917683568779196650, guid: c7f7e4eed6c42bc4c9ae57141fd8531c, type: 3}
+      propertyPath: m_FarAttachMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2869919507833848074, guid: c7f7e4eed6c42bc4c9ae57141fd8531c, type: 3}
+      propertyPath: m_FarAttachMode
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3613124855408034598, guid: c7f7e4eed6c42bc4c9ae57141fd8531c, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.2821179
@@ -731,9 +743,49 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4040768862265811342, guid: c7f7e4eed6c42bc4c9ae57141fd8531c, type: 3}
+      propertyPath: m_FarAttachMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4306657315196566177, guid: c7f7e4eed6c42bc4c9ae57141fd8531c, type: 3}
+      propertyPath: m_FarAttachMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4553917052897428053, guid: c7f7e4eed6c42bc4c9ae57141fd8531c, type: 3}
+      propertyPath: m_FarAttachMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4673373795982655866, guid: c7f7e4eed6c42bc4c9ae57141fd8531c, type: 3}
+      propertyPath: m_FarAttachMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4802246685084363407, guid: c7f7e4eed6c42bc4c9ae57141fd8531c, type: 3}
+      propertyPath: m_FarAttachMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5350430557868422463, guid: c7f7e4eed6c42bc4c9ae57141fd8531c, type: 3}
+      propertyPath: m_FarAttachMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6031575674880437489, guid: c7f7e4eed6c42bc4c9ae57141fd8531c, type: 3}
+      propertyPath: m_FarAttachMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6041116593537539117, guid: c7f7e4eed6c42bc4c9ae57141fd8531c, type: 3}
+      propertyPath: m_FarAttachMode
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8026512891566990074, guid: c7f7e4eed6c42bc4c9ae57141fd8531c, type: 3}
       propertyPath: m_Name
       value: Esqueleto
+      objectReference: {fileID: 0}
+    - target: {fileID: 8843673529794471440, guid: c7f7e4eed6c42bc4c9ae57141fd8531c, type: 3}
+      propertyPath: m_FarAttachMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9125126791054164890, guid: c7f7e4eed6c42bc4c9ae57141fd8531c, type: 3}
+      propertyPath: m_FarAttachMode
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
