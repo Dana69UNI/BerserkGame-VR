@@ -401,7 +401,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
-  m_CollisionDetection: 0
+  m_CollisionDetection: 2
 --- !u!114 &6559981265723654597
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -938,7 +938,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
-  m_CollisionDetection: 0
+  m_CollisionDetection: 2
 --- !u!114 &8257362821706774988
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1288,6 +1288,7 @@ MonoBehaviour:
   TorsoJoint: {fileID: 1998680879079961342}
   PelvisJoint: {fileID: 7134244664998638956}
   StabilizerJoint: {fileID: 8402693484929381487}
+  Arma: {fileID: 0}
   Animator: {fileID: 4933186829745425315}
 --- !u!1 &895248435266586916
 GameObject:
@@ -1591,7 +1592,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
-  m_CollisionDetection: 0
+  m_CollisionDetection: 2
 --- !u!153 &7134244664998638956
 ConfigurableJoint:
   m_ObjectHideFlags: 0
@@ -1974,7 +1975,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1279173264129046366}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fc5b3125cdc4c2a458762be6f704edf5, type: 3}
   m_Name: 
@@ -2306,7 +2307,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
-  m_CollisionDetection: 0
+  m_CollisionDetection: 2
 --- !u!114 &1178303530769538020
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2557,6 +2558,37 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c9b651767d157bc43a78f88f82ccd7ab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &1712708865994648988
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 329438993083280126}
+  m_Layer: 0
+  m_Name: GameObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &329438993083280126
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1712708865994648988}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0.0114198625, y: -0.69689494, z: 0.71698606, w: 0.01174904}
+  m_LocalPosition: {x: -0, y: 0, z: -1.12}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 5413971387828983766}
+  m_LocalEulerAnglesHint: {x: 88.372, y: 0, z: 178.123}
 --- !u!1 &1787217560743375122
 GameObject:
   m_ObjectHideFlags: 0
@@ -3030,7 +3062,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
-  m_CollisionDetection: 0
+  m_CollisionDetection: 2
 --- !u!114 &1922419719002044633
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4232,7 +4264,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
-  m_CollisionDetection: 0
+  m_CollisionDetection: 2
 --- !u!114 &5938955450907445370
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4936,7 +4968,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
-  m_CollisionDetection: 0
+  m_CollisionDetection: 2
 --- !u!114 &1834084513919429352
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5479,7 +5511,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
-  m_CollisionDetection: 0
+  m_CollisionDetection: 2
 --- !u!114 &7671444357630909775
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6079,6 +6111,7 @@ MonoBehaviour:
   TorsoJoint: {fileID: 1998680879079961342}
   PelvisJoint: {fileID: 7134244664998638956}
   StabilizerJoint: {fileID: 8402693484929381487}
+  Arma: {fileID: 7279156498472226771}
   Animator: {fileID: 4933186829745425315}
 --- !u!1 &8229974953355284235
 GameObject:
@@ -6112,12 +6145,13 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0.45445934, y: 0.11604316, z: 0.8812562, w: -0.05820731}
   m_LocalPosition: {x: 0.012054982, y: 0.022255555, z: 0.0065593896}
-  m_LocalScale: {x: 0.0065148887, y: 0.0065148887, z: 0.0065148887}
+  m_LocalScale: {x: 0.008263357, y: 0.008263357, z: 0.008263357}
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 8132615433869175054}
   - {fileID: 3989245709245030171}
   - {fileID: 5983509654714950193}
+  - {fileID: 329438993083280126}
   m_Father: {fileID: 330603696374611650}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!136 &3794666863464214049
@@ -6151,7 +6185,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8229974953355284235}
   serializedVersion: 4
-  m_Mass: 1
+  m_Mass: 5.12
   m_Drag: 0
   m_AngularDrag: 0.05
   m_CenterOfMass: {x: 0, y: 0, z: 0}
@@ -6165,7 +6199,7 @@ Rigidbody:
     m_Bits: 0
   m_ImplicitCom: 1
   m_ImplicitTensor: 1
-  m_UseGravity: 0
+  m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
@@ -6279,7 +6313,7 @@ ConfigurableJoint:
   m_ProjectionAngle: 180
   m_ConfiguredInWorldSpace: 0
   m_SwapBodies: 0
-  m_BreakForce: 600
+  m_BreakForce: 300
   m_BreakTorque: Infinity
   m_EnableCollision: 0
   m_EnablePreprocessing: 1
@@ -6369,7 +6403,7 @@ MonoBehaviour:
   m_StartingHoverFilters: []
   m_StartingSelectFilters: []
   m_StartingInteractionStrengthFilters: []
-  m_AttachTransform: {fileID: 0}
+  m_AttachTransform: {fileID: 329438993083280126}
   m_SecondaryAttachTransform: {fileID: 0}
   m_UseDynamicAttach: 0
   m_MatchAttachPosition: 1
@@ -6505,7 +6539,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
-  m_CollisionDetection: 0
+  m_CollisionDetection: 2
 --- !u!114 &59245663232321933
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6927,7 +6961,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
-  m_CollisionDetection: 0
+  m_CollisionDetection: 2
 --- !u!114 &7743491807688049524
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7287,7 +7321,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
-  m_CollisionDetection: 0
+  m_CollisionDetection: 2
 --- !u!114 &6682465475213235400
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7736,7 +7770,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
-  m_CollisionDetection: 0
+  m_CollisionDetection: 2
 --- !u!153 &3451450003517623635
 ConfigurableJoint:
   m_ObjectHideFlags: 0

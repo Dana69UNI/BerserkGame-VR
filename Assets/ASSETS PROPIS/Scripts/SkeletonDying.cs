@@ -8,6 +8,8 @@ public class SkeletonDying : MonoBehaviour
     public ConfigurableJoint TorsoJoint;
     public ConfigurableJoint PelvisJoint;
     public ConfigurableJoint StabilizerJoint;
+    public ConfigurableJoint Arma;
+
     private IAEnemigo IAEnemigo;
     public Animator Animator;
     private float deathTime = 0f;
@@ -26,12 +28,14 @@ public class SkeletonDying : MonoBehaviour
             Destroy(StabilizerJoint);
             Destroy(IAEnemigo);
             Destroy(Animator);
+            Destroy(Arma);
             StartCoroutine(Fade());
         }
         if(TorsoJoint == null)
         {
             Destroy(PelvisJoint);
             Destroy(StabilizerJoint);
+            Destroy(Arma);
             Destroy(IAEnemigo);
             Destroy(Animator);
             StartCoroutine(Fade());

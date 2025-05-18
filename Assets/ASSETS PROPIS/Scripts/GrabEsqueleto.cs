@@ -8,11 +8,13 @@ public class GrabEsqueleto : MonoBehaviour
     private XRGrabInteractable grab;
     private ConfigurableJoint joint;
     private bool grabEnabled = false;
+    private Damage dmg;
 
     void Start()
     {
         grab = GetComponent<XRGrabInteractable>();
         joint = GetComponent<ConfigurableJoint>();
+        dmg = GetComponent<Damage>();
 
         if (grab != null)
             grab.enabled = false; 
@@ -24,6 +26,7 @@ public class GrabEsqueleto : MonoBehaviour
         {
             grab.enabled = true;
             grabEnabled = true;
+            dmg.enabled = false;
             /*else if (!joint.connectedBody)
             {
                 // Opcional: si el joint encara existeix però s'ha "trencat" (sense connexió)
