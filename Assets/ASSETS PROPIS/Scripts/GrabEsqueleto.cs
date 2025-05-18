@@ -15,7 +15,7 @@ public class GrabEsqueleto : MonoBehaviour
         joint = GetComponent<ConfigurableJoint>();
 
         if (grab != null)
-            grab.enabled = false; // Ens assegurem que comenci desactivat
+            grab.enabled = false; 
     }
 
     void Update()
@@ -24,7 +24,6 @@ public class GrabEsqueleto : MonoBehaviour
         {
             if (joint == null)
             {
-                // Potser s'ha destruït a runtime
                 grab = GetComponent<XRGrabInteractable>();
                 if (grab != null)
                 {
@@ -32,11 +31,11 @@ public class GrabEsqueleto : MonoBehaviour
                     grabEnabled = true;
                 }
             }
-            else if (!joint.connectedBody)
+            /*else if (!joint.connectedBody)
             {
                 // Opcional: si el joint encara existeix però s'ha "trencat" (sense connexió)
                 Destroy(joint); // Opcional: el treus i deixes que s'activi el grab a la propera iteració
-            }
+            }*/ //aixo m'ho ha dit el chat ns
         }
     }
 }
