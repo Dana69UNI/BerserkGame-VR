@@ -8,10 +8,12 @@ using UnityEngine.XR.Interaction.Toolkit.Interactors;
 public class XRGrabAlyx : XRGrabInteractable
 {
     public float velocityThreshold = 2;
+    public float jumpAngleDegree = 60;
 
     private NearFarInteractor rayInteractor;
     private Vector3 previousPos;
     private Rigidbody interactableRigibody;
+    private bool canJump = true;
 
     protected override void Awake()
     {
@@ -29,10 +31,30 @@ public class XRGrabAlyx : XRGrabInteractable
             if(velocity.magnitude > velocityThreshold)
             {
                 Drop();
-                interactableRigibody.velocity = Vector3.up;//aixo dps ho canviarem
+                interactableRigibody.velocity = ComputeVelocity();
+                canJump = false;
             }
         }
     }
+
+    public Vector3 ComputeVelocity()
+    {
+        Vector3 diff = rayInteractor.transform.position - transform.position;
+        Vector3 diffXZ = new Vector3(diff.x,0,diff.z);
+        float diffXZLength= diffXZ.magnitude;
+        float diffYLength = diff.y;
+
+        float angleInRadian = jumpAngleDegree * Mathf.Deg2Rad;
+
+        float jumpSpeed = Mathf.Sqrt(-Physics.gravity.y * Mathf.Pow(diffXZLength, 2) 
+            / (2 * Mathf.Cos(angleInRadian) * Mathf.Cos(angleInRadian) * (diffXZ.magnitude * Mathf.Tan(angleInRadian) - diffYLength)));
+
+        Vector3 jumpVelocityVector = diffXZ.normalized * Mathf.Cos(angleInRadian) * jumpSpeed + Vector3.up * Mathf.Sin(angleInRadian) * jumpSpeed;
+
+        return jumpVelocityVector;
+
+    }
+
     protected override void OnSelectEntering(SelectEnterEventArgs args)
     {
         
@@ -44,6 +66,7 @@ public class XRGrabAlyx : XRGrabInteractable
 
             rayInteractor = (NearFarInteractor)args.interactorObject;
             previousPos = rayInteractor.transform.position;
+            canJump = true;
         }
         else
         {
