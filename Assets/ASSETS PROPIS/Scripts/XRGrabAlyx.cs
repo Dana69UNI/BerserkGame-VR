@@ -8,10 +8,12 @@ using UnityEngine.XR.Interaction.Toolkit.Interactors;
 public class XRGrabAlyx : XRGrabInteractable
 {
     public float velocityThreshold = 2;
+    public float jumpAngleDegree = 60;
 
-    private XRRayInteractor rayInteractor;
+    private NearFarInteractor rayInteractor;
     private Vector3 previousPos;
     private Rigidbody interactableRigibody;
+    private bool canJump = true;
 
     protected override void Awake()
     {
@@ -21,36 +23,58 @@ public class XRGrabAlyx : XRGrabInteractable
 
     private void Update()
     {
-        if(isSelected && firstInteractorSelecting is XRRayInteractor)
+        if(isSelected && firstInteractorSelecting is NearFarInteractor)//calcular la velocitat del ray
         {
             Vector3 velocity = (rayInteractor.transform.position - previousPos) / Time.deltaTime;
             previousPos = rayInteractor.transform.position;
 
             if(velocity.magnitude > velocityThreshold)
             {
-                Drop();//
-                interactableRigibody.velocity = Vector3.up;
+                Drop();
+                interactableRigibody.velocity = ComputeVelocity();
+                canJump = false;
             }
-        }    
+        }
     }
-    protected override void OnSelectEntered(SelectEnterEventArgs args)
+
+    public Vector3 ComputeVelocity()
     {
-        if(args.interactableObject is XRRayInteractor)
+        Vector3 diff = rayInteractor.transform.position - transform.position;
+        Vector3 diffXZ = new Vector3(diff.x,0,diff.z);
+        float diffXZLength= diffXZ.magnitude;
+        float diffYLength = diff.y;
+
+        float angleInRadian = jumpAngleDegree * Mathf.Deg2Rad;
+
+        float jumpSpeed = Mathf.Sqrt(-Physics.gravity.y * Mathf.Pow(diffXZLength, 2) 
+            / (2 * Mathf.Cos(angleInRadian) * Mathf.Cos(angleInRadian) * (diffXZ.magnitude * Mathf.Tan(angleInRadian) - diffYLength)));
+
+        Vector3 jumpVelocityVector = diffXZ.normalized * Mathf.Cos(angleInRadian) * jumpSpeed + Vector3.up * Mathf.Sin(angleInRadian) * jumpSpeed;
+
+        return jumpVelocityVector;
+
+    }
+
+    protected override void OnSelectEntering(SelectEnterEventArgs args)
+    {
+        
+        if (args.interactorObject is NearFarInteractor)
         {
             trackPosition = false;
-            trackPosition = false;
-            trackPosition = false;
+            trackRotation = false;
+            throwOnDetach = false;
 
-            rayInteractor = (XRRayInteractor)args.interactableObject;
+            rayInteractor = (NearFarInteractor)args.interactorObject;
             previousPos = rayInteractor.transform.position;
+            canJump = true;
         }
         else
         {
             trackPosition = true;
-            trackPosition = true;
-            trackPosition = true;
+            trackRotation = true;
+            throwOnDetach = true;
         }
-        base.OnSelectEntered(args);
+        base.OnSelectEntering(args);
     }
 
 
