@@ -326,8 +326,8 @@ GameObject:
   - component: {fileID: 7326015477165472623}
   - component: {fileID: 6559981265723654597}
   - component: {fileID: 5213033385596001561}
-  - component: {fileID: 4040768862265811342}
   - component: {fileID: 2484251670594093523}
+  - component: {fileID: 4970652017477311050}
   m_Layer: 0
   m_Name: BrazoL_Bone
   m_TagString: Untagged
@@ -518,7 +518,19 @@ ConfigurableJoint:
   m_EnablePreprocessing: 1
   m_MassScale: 1
   m_ConnectedMassScale: 1
---- !u!114 &4040768862265811342
+--- !u!114 &2484251670594093523
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 237062026629075194}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c9b651767d157bc43a78f88f82ccd7ab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &4970652017477311050
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -527,7 +539,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 237062026629075194}
   m_Enabled: 0
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0ad34abafad169848a38072baa96cdb2, type: 3}
+  m_Script: {fileID: 11500000, guid: ca1ce158727fe29489d4606f548a3a77, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_InteractionManager: {fileID: 0}
@@ -639,19 +651,9 @@ MonoBehaviour:
   m_StartingSingleGrabTransformers: []
   m_StartingMultipleGrabTransformers: []
   m_AddDefaultGrabTransformers: 1
-  m_FarAttachMode: 1
---- !u!114 &2484251670594093523
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 237062026629075194}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c9b651767d157bc43a78f88f82ccd7ab, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_FarAttachMode: 0
+  velocityThreshold: 2
+  jumpAngleDegree: 60
 --- !u!1 &283820202842224684
 GameObject:
   m_ObjectHideFlags: 0
@@ -863,8 +865,8 @@ GameObject:
   - component: {fileID: 3042284724664190719}
   - component: {fileID: 8257362821706774988}
   - component: {fileID: 4748860938665161249}
-  - component: {fileID: 6031575674880437489}
   - component: {fileID: 8770535530211294249}
+  - component: {fileID: 3250124888320630462}
   m_Layer: 0
   m_Name: BrazoR_Bone
   m_TagString: Untagged
@@ -1055,7 +1057,19 @@ ConfigurableJoint:
   m_EnablePreprocessing: 1
   m_MassScale: 1
   m_ConnectedMassScale: 1
---- !u!114 &6031575674880437489
+--- !u!114 &8770535530211294249
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 757150044095066874}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c9b651767d157bc43a78f88f82ccd7ab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &3250124888320630462
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1064,7 +1078,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 757150044095066874}
   m_Enabled: 0
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0ad34abafad169848a38072baa96cdb2, type: 3}
+  m_Script: {fileID: 11500000, guid: ca1ce158727fe29489d4606f548a3a77, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_InteractionManager: {fileID: 0}
@@ -1176,19 +1190,9 @@ MonoBehaviour:
   m_StartingSingleGrabTransformers: []
   m_StartingMultipleGrabTransformers: []
   m_AddDefaultGrabTransformers: 1
-  m_FarAttachMode: 1
---- !u!114 &8770535530211294249
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 757150044095066874}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c9b651767d157bc43a78f88f82ccd7ab, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_FarAttachMode: 0
+  velocityThreshold: 2
+  jumpAngleDegree: 60
 --- !u!1 &835491866669616195
 GameObject:
   m_ObjectHideFlags: 0
@@ -1501,8 +1505,8 @@ GameObject:
   - component: {fileID: 8728017557121035182}
   - component: {fileID: 2555516824459677315}
   - component: {fileID: 7134244664998638956}
-  - component: {fileID: 4553917052897428053}
   - component: {fileID: 1665773174177634946}
+  - component: {fileID: 7167250452468766505}
   m_Layer: 0
   m_Name: Pelvis_Bone
   m_TagString: Untagged
@@ -1695,7 +1699,19 @@ ConfigurableJoint:
   m_EnablePreprocessing: 1
   m_MassScale: 1
   m_ConnectedMassScale: 1
---- !u!114 &4553917052897428053
+--- !u!114 &1665773174177634946
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1256534102299402321}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c9b651767d157bc43a78f88f82ccd7ab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &7167250452468766505
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1704,7 +1720,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1256534102299402321}
   m_Enabled: 0
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0ad34abafad169848a38072baa96cdb2, type: 3}
+  m_Script: {fileID: 11500000, guid: ca1ce158727fe29489d4606f548a3a77, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_InteractionManager: {fileID: 0}
@@ -1816,19 +1832,9 @@ MonoBehaviour:
   m_StartingSingleGrabTransformers: []
   m_StartingMultipleGrabTransformers: []
   m_AddDefaultGrabTransformers: 1
-  m_FarAttachMode: 1
---- !u!114 &1665773174177634946
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1256534102299402321}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c9b651767d157bc43a78f88f82ccd7ab, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_FarAttachMode: 0
+  velocityThreshold: 2
+  jumpAngleDegree: 60
 --- !u!1 &1279173264129046366
 GameObject:
   m_ObjectHideFlags: 0
@@ -1845,7 +1851,7 @@ GameObject:
   - component: {fileID: 5712431554439904641}
   - component: {fileID: 1240507720820208182}
   - component: {fileID: 4354587967525047743}
-  - component: {fileID: 1030292125497980765}
+  - component: {fileID: 5711574665769327012}
   m_Layer: 0
   m_Name: er
   m_TagString: Sword
@@ -2095,7 +2101,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c9b651767d157bc43a78f88f82ccd7ab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &1030292125497980765
+--- !u!114 &5711574665769327012
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2104,7 +2110,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1279173264129046366}
   m_Enabled: 0
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0ad34abafad169848a38072baa96cdb2, type: 3}
+  m_Script: {fileID: 11500000, guid: ca1ce158727fe29489d4606f548a3a77, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_InteractionManager: {fileID: 0}
@@ -2216,7 +2222,9 @@ MonoBehaviour:
   m_StartingSingleGrabTransformers: []
   m_StartingMultipleGrabTransformers: []
   m_AddDefaultGrabTransformers: 1
-  m_FarAttachMode: 1
+  m_FarAttachMode: 0
+  velocityThreshold: 2
+  jumpAngleDegree: 60
 --- !u!1 &1711920274622365190
 GameObject:
   m_ObjectHideFlags: 0
@@ -2230,8 +2238,8 @@ GameObject:
   - component: {fileID: 6811422599775596140}
   - component: {fileID: 1178303530769538020}
   - component: {fileID: 1998680879079961342}
-  - component: {fileID: 678547279448731208}
   - component: {fileID: 1555452765149039445}
+  - component: {fileID: 6294006228332240113}
   m_Layer: 0
   m_Name: Torso_Bone
   m_TagString: Untagged
@@ -2424,7 +2432,19 @@ ConfigurableJoint:
   m_EnablePreprocessing: 1
   m_MassScale: 1
   m_ConnectedMassScale: 1
---- !u!114 &678547279448731208
+--- !u!114 &1555452765149039445
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1711920274622365190}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c9b651767d157bc43a78f88f82ccd7ab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &6294006228332240113
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2433,7 +2453,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1711920274622365190}
   m_Enabled: 0
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0ad34abafad169848a38072baa96cdb2, type: 3}
+  m_Script: {fileID: 11500000, guid: ca1ce158727fe29489d4606f548a3a77, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_InteractionManager: {fileID: 0}
@@ -2545,19 +2565,9 @@ MonoBehaviour:
   m_StartingSingleGrabTransformers: []
   m_StartingMultipleGrabTransformers: []
   m_AddDefaultGrabTransformers: 1
-  m_FarAttachMode: 1
---- !u!114 &1555452765149039445
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1711920274622365190}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c9b651767d157bc43a78f88f82ccd7ab, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_FarAttachMode: 0
+  velocityThreshold: 2
+  jumpAngleDegree: 60
 --- !u!1 &1712708865994648988
 GameObject:
   m_ObjectHideFlags: 0
@@ -2967,8 +2977,8 @@ GameObject:
   - component: {fileID: 5307838161172909709}
   - component: {fileID: 1922419719002044633}
   - component: {fileID: 913834619916270976}
-  - component: {fileID: 9125126791054164890}
   - component: {fileID: 3004127191596842775}
+  - component: {fileID: 1208922306626201728}
   m_Layer: 0
   m_Name: TibiaPieR_Bone
   m_TagString: Untagged
@@ -3179,7 +3189,19 @@ ConfigurableJoint:
   m_EnablePreprocessing: 1
   m_MassScale: 1
   m_ConnectedMassScale: 1
---- !u!114 &9125126791054164890
+--- !u!114 &3004127191596842775
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2556393718685662503}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c9b651767d157bc43a78f88f82ccd7ab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1208922306626201728
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -3188,7 +3210,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 2556393718685662503}
   m_Enabled: 0
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0ad34abafad169848a38072baa96cdb2, type: 3}
+  m_Script: {fileID: 11500000, guid: ca1ce158727fe29489d4606f548a3a77, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_InteractionManager: {fileID: 0}
@@ -3300,19 +3322,9 @@ MonoBehaviour:
   m_StartingSingleGrabTransformers: []
   m_StartingMultipleGrabTransformers: []
   m_AddDefaultGrabTransformers: 1
-  m_FarAttachMode: 1
---- !u!114 &3004127191596842775
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2556393718685662503}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c9b651767d157bc43a78f88f82ccd7ab, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_FarAttachMode: 0
+  velocityThreshold: 2
+  jumpAngleDegree: 60
 --- !u!1 &3223801047564589108
 GameObject:
   m_ObjectHideFlags: 0
@@ -3324,8 +3336,8 @@ GameObject:
   - component: {fileID: 5546746469599956534}
   - component: {fileID: 8520800901781167757}
   - component: {fileID: 8402693484929381487}
-  - component: {fileID: 4802246685084363407}
   - component: {fileID: 6398413750246974075}
+  - component: {fileID: 3943319920479204597}
   m_Layer: 0
   m_Name: Stabilizer
   m_TagString: Untagged
@@ -3477,7 +3489,19 @@ ConfigurableJoint:
   m_EnablePreprocessing: 1
   m_MassScale: 1
   m_ConnectedMassScale: 1
---- !u!114 &4802246685084363407
+--- !u!114 &6398413750246974075
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3223801047564589108}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c9b651767d157bc43a78f88f82ccd7ab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &3943319920479204597
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -3486,7 +3510,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 3223801047564589108}
   m_Enabled: 0
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0ad34abafad169848a38072baa96cdb2, type: 3}
+  m_Script: {fileID: 11500000, guid: ca1ce158727fe29489d4606f548a3a77, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_InteractionManager: {fileID: 0}
@@ -3598,19 +3622,9 @@ MonoBehaviour:
   m_StartingSingleGrabTransformers: []
   m_StartingMultipleGrabTransformers: []
   m_AddDefaultGrabTransformers: 1
-  m_FarAttachMode: 1
---- !u!114 &6398413750246974075
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3223801047564589108}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c9b651767d157bc43a78f88f82ccd7ab, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_FarAttachMode: 0
+  velocityThreshold: 2
+  jumpAngleDegree: 60
 --- !u!1 &3409282716125757842
 GameObject:
   m_ObjectHideFlags: 0
@@ -4190,8 +4204,8 @@ GameObject:
   - component: {fileID: 8797533542410051039}
   - component: {fileID: 5938955450907445370}
   - component: {fileID: 437289998263526487}
-  - component: {fileID: 6041116593537539117}
   - component: {fileID: 3475967522985963974}
+  - component: {fileID: 5689943211121999550}
   m_Layer: 0
   m_Name: AnteBrazoManoL_Bone
   m_TagString: Untagged
@@ -4381,7 +4395,19 @@ ConfigurableJoint:
   m_EnablePreprocessing: 1
   m_MassScale: 1
   m_ConnectedMassScale: 1
---- !u!114 &6041116593537539117
+--- !u!114 &3475967522985963974
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5209552644938667797}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c9b651767d157bc43a78f88f82ccd7ab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &5689943211121999550
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -4390,7 +4416,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 5209552644938667797}
   m_Enabled: 0
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0ad34abafad169848a38072baa96cdb2, type: 3}
+  m_Script: {fileID: 11500000, guid: ca1ce158727fe29489d4606f548a3a77, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_InteractionManager: {fileID: 0}
@@ -4502,19 +4528,9 @@ MonoBehaviour:
   m_StartingSingleGrabTransformers: []
   m_StartingMultipleGrabTransformers: []
   m_AddDefaultGrabTransformers: 1
-  m_FarAttachMode: 1
---- !u!114 &3475967522985963974
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5209552644938667797}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c9b651767d157bc43a78f88f82ccd7ab, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_FarAttachMode: 0
+  velocityThreshold: 2
+  jumpAngleDegree: 60
 --- !u!1 &5264914221316115755
 GameObject:
   m_ObjectHideFlags: 0
@@ -4893,8 +4909,8 @@ GameObject:
   - component: {fileID: 5685919439051152797}
   - component: {fileID: 1834084513919429352}
   - component: {fileID: 7629013474225309382}
-  - component: {fileID: 8843673529794471440}
   - component: {fileID: 5983773649795734791}
+  - component: {fileID: 7928635710576896195}
   m_Layer: 0
   m_Name: FemurR_Bone
   m_TagString: Untagged
@@ -5085,7 +5101,19 @@ ConfigurableJoint:
   m_EnablePreprocessing: 1
   m_MassScale: 1
   m_ConnectedMassScale: 1
---- !u!114 &8843673529794471440
+--- !u!114 &5983773649795734791
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5673547954112651919}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c9b651767d157bc43a78f88f82ccd7ab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &7928635710576896195
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -5094,7 +5122,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 5673547954112651919}
   m_Enabled: 0
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0ad34abafad169848a38072baa96cdb2, type: 3}
+  m_Script: {fileID: 11500000, guid: ca1ce158727fe29489d4606f548a3a77, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_InteractionManager: {fileID: 0}
@@ -5206,19 +5234,9 @@ MonoBehaviour:
   m_StartingSingleGrabTransformers: []
   m_StartingMultipleGrabTransformers: []
   m_AddDefaultGrabTransformers: 1
-  m_FarAttachMode: 1
---- !u!114 &5983773649795734791
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5673547954112651919}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c9b651767d157bc43a78f88f82ccd7ab, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_FarAttachMode: 0
+  velocityThreshold: 2
+  jumpAngleDegree: 60
 --- !u!1 &6716192258622170117
 GameObject:
   m_ObjectHideFlags: 0
@@ -5435,8 +5453,8 @@ GameObject:
   - component: {fileID: 9043680061122501253}
   - component: {fileID: 7671444357630909775}
   - component: {fileID: 8929448791879779031}
-  - component: {fileID: 4673373795982655866}
   - component: {fileID: 3765439835217767361}
+  - component: {fileID: 5757229902816520923}
   m_Layer: 0
   m_Name: AnteBrazoManoR_Bone
   m_TagString: Untagged
@@ -5628,7 +5646,19 @@ ConfigurableJoint:
   m_EnablePreprocessing: 1
   m_MassScale: 1
   m_ConnectedMassScale: 1
---- !u!114 &4673373795982655866
+--- !u!114 &3765439835217767361
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7274784992512013531}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c9b651767d157bc43a78f88f82ccd7ab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &5757229902816520923
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -5637,7 +5667,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 7274784992512013531}
   m_Enabled: 0
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0ad34abafad169848a38072baa96cdb2, type: 3}
+  m_Script: {fileID: 11500000, guid: ca1ce158727fe29489d4606f548a3a77, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_InteractionManager: {fileID: 0}
@@ -5749,19 +5779,9 @@ MonoBehaviour:
   m_StartingSingleGrabTransformers: []
   m_StartingMultipleGrabTransformers: []
   m_AddDefaultGrabTransformers: 1
-  m_FarAttachMode: 1
---- !u!114 &3765439835217767361
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7274784992512013531}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c9b651767d157bc43a78f88f82ccd7ab, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_FarAttachMode: 0
+  velocityThreshold: 2
+  jumpAngleDegree: 60
 --- !u!1 &7577698490639508847
 GameObject:
   m_ObjectHideFlags: 0
@@ -6127,7 +6147,7 @@ GameObject:
   - component: {fileID: 8586311367880968080}
   - component: {fileID: 7279156498472226771}
   - component: {fileID: 8779344404523661973}
-  - component: {fileID: 6028028784412006093}
+  - component: {fileID: 1502403857552462930}
   m_Layer: 0
   m_Name: SkeletonWeapon
   m_TagString: Untagged
@@ -6331,7 +6351,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c9b651767d157bc43a78f88f82ccd7ab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &6028028784412006093
+--- !u!114 &1502403857552462930
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -6340,7 +6360,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 8229974953355284235}
   m_Enabled: 0
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0ad34abafad169848a38072baa96cdb2, type: 3}
+  m_Script: {fileID: 11500000, guid: ca1ce158727fe29489d4606f548a3a77, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_InteractionManager: {fileID: 0}
@@ -6403,7 +6423,7 @@ MonoBehaviour:
   m_StartingHoverFilters: []
   m_StartingSelectFilters: []
   m_StartingInteractionStrengthFilters: []
-  m_AttachTransform: {fileID: 329438993083280126}
+  m_AttachTransform: {fileID: 0}
   m_SecondaryAttachTransform: {fileID: 0}
   m_UseDynamicAttach: 0
   m_MatchAttachPosition: 1
@@ -6452,7 +6472,9 @@ MonoBehaviour:
   m_StartingSingleGrabTransformers: []
   m_StartingMultipleGrabTransformers: []
   m_AddDefaultGrabTransformers: 1
-  m_FarAttachMode: 1
+  m_FarAttachMode: 0
+  velocityThreshold: 2
+  jumpAngleDegree: 60
 --- !u!1 &8367730122691939242
 GameObject:
   m_ObjectHideFlags: 0
@@ -6466,8 +6488,8 @@ GameObject:
   - component: {fileID: 5883423118598489312}
   - component: {fileID: 59245663232321933}
   - component: {fileID: 452475844074902798}
-  - component: {fileID: 2869919507833848074}
   - component: {fileID: 2014732729657275830}
+  - component: {fileID: 7478992800443825042}
   m_Layer: 0
   m_Name: Craneo_Bone
   m_TagString: Untagged
@@ -6656,7 +6678,19 @@ ConfigurableJoint:
   m_EnablePreprocessing: 1
   m_MassScale: 1
   m_ConnectedMassScale: 1
---- !u!114 &2869919507833848074
+--- !u!114 &2014732729657275830
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8367730122691939242}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c9b651767d157bc43a78f88f82ccd7ab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &7478992800443825042
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -6665,7 +6699,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 8367730122691939242}
   m_Enabled: 0
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0ad34abafad169848a38072baa96cdb2, type: 3}
+  m_Script: {fileID: 11500000, guid: ca1ce158727fe29489d4606f548a3a77, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_InteractionManager: {fileID: 0}
@@ -6777,19 +6811,9 @@ MonoBehaviour:
   m_StartingSingleGrabTransformers: []
   m_StartingMultipleGrabTransformers: []
   m_AddDefaultGrabTransformers: 1
-  m_FarAttachMode: 1
---- !u!114 &2014732729657275830
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8367730122691939242}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c9b651767d157bc43a78f88f82ccd7ab, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_FarAttachMode: 0
+  velocityThreshold: 2
+  jumpAngleDegree: 60
 --- !u!1 &8379462261056138352
 GameObject:
   m_ObjectHideFlags: 0
@@ -6886,8 +6910,8 @@ GameObject:
   - component: {fileID: 1827865087264998945}
   - component: {fileID: 7743491807688049524}
   - component: {fileID: 4666720035561518802}
-  - component: {fileID: 5350430557868422463}
   - component: {fileID: 3662954327857937607}
+  - component: {fileID: 7513742712226365268}
   m_Layer: 0
   m_Name: FemurL_Bone
   m_TagString: Untagged
@@ -7078,7 +7102,19 @@ ConfigurableJoint:
   m_EnablePreprocessing: 1
   m_MassScale: 1
   m_ConnectedMassScale: 1
---- !u!114 &5350430557868422463
+--- !u!114 &3662954327857937607
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8652127015025752496}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c9b651767d157bc43a78f88f82ccd7ab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &7513742712226365268
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -7087,7 +7123,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 8652127015025752496}
   m_Enabled: 0
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0ad34abafad169848a38072baa96cdb2, type: 3}
+  m_Script: {fileID: 11500000, guid: ca1ce158727fe29489d4606f548a3a77, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_InteractionManager: {fileID: 0}
@@ -7199,19 +7235,9 @@ MonoBehaviour:
   m_StartingSingleGrabTransformers: []
   m_StartingMultipleGrabTransformers: []
   m_AddDefaultGrabTransformers: 1
-  m_FarAttachMode: 1
---- !u!114 &3662954327857937607
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8652127015025752496}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c9b651767d157bc43a78f88f82ccd7ab, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_FarAttachMode: 0
+  velocityThreshold: 2
+  jumpAngleDegree: 60
 --- !u!1 &8736933171638092125
 GameObject:
   m_ObjectHideFlags: 0
@@ -7226,8 +7252,8 @@ GameObject:
   - component: {fileID: 2258261082881931985}
   - component: {fileID: 6682465475213235400}
   - component: {fileID: 7041488609437567169}
-  - component: {fileID: 1917683568779196650}
   - component: {fileID: 4399824386858898965}
+  - component: {fileID: 5200605627133372142}
   m_Layer: 0
   m_Name: TibiaL_Bone
   m_TagString: Untagged
@@ -7438,7 +7464,19 @@ ConfigurableJoint:
   m_EnablePreprocessing: 1
   m_MassScale: 1
   m_ConnectedMassScale: 1
---- !u!114 &1917683568779196650
+--- !u!114 &4399824386858898965
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8736933171638092125}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c9b651767d157bc43a78f88f82ccd7ab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &5200605627133372142
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -7447,7 +7485,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 8736933171638092125}
   m_Enabled: 0
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0ad34abafad169848a38072baa96cdb2, type: 3}
+  m_Script: {fileID: 11500000, guid: ca1ce158727fe29489d4606f548a3a77, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_InteractionManager: {fileID: 0}
@@ -7559,19 +7597,9 @@ MonoBehaviour:
   m_StartingSingleGrabTransformers: []
   m_StartingMultipleGrabTransformers: []
   m_AddDefaultGrabTransformers: 1
-  m_FarAttachMode: 1
---- !u!114 &4399824386858898965
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8736933171638092125}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c9b651767d157bc43a78f88f82ccd7ab, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_FarAttachMode: 0
+  velocityThreshold: 2
+  jumpAngleDegree: 60
 --- !u!1 &8888290082329271912
 GameObject:
   m_ObjectHideFlags: 0
@@ -7670,8 +7698,8 @@ GameObject:
   - component: {fileID: 3451450003517623635}
   - component: {fileID: 6679982234367204447}
   - component: {fileID: 2774936337231480499}
-  - component: {fileID: 4306657315196566177}
   - component: {fileID: 307661079349994404}
+  - component: {fileID: 939879046974630663}
   m_Layer: 0
   m_Name: Mandibula
   m_TagString: Untagged
@@ -7915,7 +7943,19 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.0013920399, y: 0.0005084102, z: 0.00054849254}
   m_Center: {x: -0.0000006002001, y: -0.000075846525, z: 0.018123554}
---- !u!114 &4306657315196566177
+--- !u!114 &307661079349994404
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9084192304369244556}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c9b651767d157bc43a78f88f82ccd7ab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &939879046974630663
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -7924,7 +7964,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 9084192304369244556}
   m_Enabled: 0
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0ad34abafad169848a38072baa96cdb2, type: 3}
+  m_Script: {fileID: 11500000, guid: ca1ce158727fe29489d4606f548a3a77, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_InteractionManager: {fileID: 0}
@@ -8036,16 +8076,6 @@ MonoBehaviour:
   m_StartingSingleGrabTransformers: []
   m_StartingMultipleGrabTransformers: []
   m_AddDefaultGrabTransformers: 1
-  m_FarAttachMode: 1
---- !u!114 &307661079349994404
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9084192304369244556}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c9b651767d157bc43a78f88f82ccd7ab, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_FarAttachMode: 0
+  velocityThreshold: 2
+  jumpAngleDegree: 60
