@@ -19,7 +19,7 @@ public class PlayOnGrab : XRGrabInteractable
 
     private void CanviEscena()
     {
-        
+        //crec que es millor que ho posis aqui, sembla mes ordenat
         Debug.Log("Canvi d'escena!");
     }
 }
