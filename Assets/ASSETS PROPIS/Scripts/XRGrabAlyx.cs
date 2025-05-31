@@ -9,7 +9,7 @@ public class XRGrabAlyx : XRGrabInteractable
 {
     public float velocityThreshold = 2;
 
-    private XRRayInteractor rayInteractor;
+    private NearFarInteractor rayInteractor;
     private Vector3 previousPos;
     private Rigidbody interactableRigibody;
 
@@ -21,36 +21,37 @@ public class XRGrabAlyx : XRGrabInteractable
 
     private void Update()
     {
-        if(isSelected && firstInteractorSelecting is XRRayInteractor)
+        if(isSelected && firstInteractorSelecting is NearFarInteractor)//calcular la velocitat del ray
         {
             Vector3 velocity = (rayInteractor.transform.position - previousPos) / Time.deltaTime;
             previousPos = rayInteractor.transform.position;
 
             if(velocity.magnitude > velocityThreshold)
             {
-                Drop();//
-                interactableRigibody.velocity = Vector3.up;
+                Drop();
+                interactableRigibody.velocity = Vector3.up;//aixo dps ho canviarem
             }
-        }    
+        }
     }
-    protected override void OnSelectEntered(SelectEnterEventArgs args)
+    protected override void OnSelectEntering(SelectEnterEventArgs args)
     {
-        if(args.interactableObject is XRRayInteractor)
+        
+        if (args.interactorObject is NearFarInteractor)
         {
             trackPosition = false;
-            trackPosition = false;
-            trackPosition = false;
+            trackRotation = false;
+            throwOnDetach = false;
 
-            rayInteractor = (XRRayInteractor)args.interactableObject;
+            rayInteractor = (NearFarInteractor)args.interactorObject;
             previousPos = rayInteractor.transform.position;
         }
         else
         {
             trackPosition = true;
-            trackPosition = true;
-            trackPosition = true;
+            trackRotation = true;
+            throwOnDetach = true;
         }
-        base.OnSelectEntered(args);
+        base.OnSelectEntering(args);
     }
 
 
