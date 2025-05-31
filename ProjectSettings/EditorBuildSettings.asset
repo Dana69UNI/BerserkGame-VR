@@ -5,12 +5,12 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 0
-    path: Assets/Scenes/SampleScene.unity
-    guid: 55daccc09a3b69647bbab145b54a3ab3
   - enabled: 1
     path: Assets/Scenes/BerserkScene.unity
     guid: f1e11cbcfa52b9745b7e089c2b82ae26
+  - enabled: 1
+    path: Assets/Scenes/DeathScene.unity
+    guid: 55ef0c73fa6cdba4fb34aa68e67bdeee
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: bfa1182bd221b4ca89619141f66f1260, type: 2}
     Unity.XR.WindowsMR.Settings: {fileID: 11400000, guid: dc5a169419fa04987b057f65238cf3ba, type: 2}
