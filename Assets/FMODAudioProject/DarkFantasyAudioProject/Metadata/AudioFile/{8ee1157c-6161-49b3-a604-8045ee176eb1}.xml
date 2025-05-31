@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{8ee1157c-6161-49b3-a604-8045ee176eb1}">
+		<property name="assetPath">
+			<value>MetalClink4.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>0.5</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{2fb94702-ea4d-431d-a53c-d511078bd193}</destination>
+		</relationship>
+	</object>
+</objects>

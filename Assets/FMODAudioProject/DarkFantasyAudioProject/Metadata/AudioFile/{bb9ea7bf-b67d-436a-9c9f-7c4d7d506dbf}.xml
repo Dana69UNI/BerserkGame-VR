@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{bb9ea7bf-b67d-436a-9c9f-7c4d7d506dbf}">
+		<property name="assetPath">
+			<value>DropOnGround4.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>0.5</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{2fb94702-ea4d-431d-a53c-d511078bd193}</destination>
+		</relationship>
+	</object>
+</objects>
