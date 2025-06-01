@@ -15,7 +15,7 @@ MonoBehaviour:
   Path: Assets/FMODAudioProject/DarkFantasyAudioProject/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638843110838231467
+  lastModified: 638842877655192902
   FileSizes:
   - Name: Desktop
     Value: 858
@@ -35,7 +35,7 @@ MonoBehaviour:
   Path: Assets/FMODAudioProject/DarkFantasyAudioProject/Build/Desktop/SFX.bank
   Name: SFX
   StudioPath: bank:/SFX
-  lastModified: 638843110838236021
+  lastModified: 638842877655231242
   FileSizes:
   - Name: Desktop
     Value: 64608
@@ -91,7 +91,7 @@ MonoBehaviour:
   - {fileID: 3314261293274709304}
   StringsBanks:
   - {fileID: -6774911984922517984}
-  cacheTime: 638843110838236021
+  cacheTime: 638842877655231242
   cacheVersion: 131621
 --- !u!114 &88920877623968949
 MonoBehaviour:
@@ -135,7 +135,7 @@ MonoBehaviour:
   Path: Assets/FMODAudioProject/DarkFantasyAudioProject/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638843110838221459
+  lastModified: 638842877655192902
   FileSizes:
   - Name: Desktop
     Value: 1036
