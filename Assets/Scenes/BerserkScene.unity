@@ -6403,10 +6403,6 @@ MonoBehaviour:
   <spawnPoint4>k__BackingField: {fileID: 1675638634}
   <spawnPoint5>k__BackingField: {fileID: 959373096}
   <spawnPoint6>k__BackingField: {fileID: 1181485045}
-  spawnPoints: []
-  currentWave: 0
-  waveTimer: 0
-  spawnBusy: []
 --- !u!4 &1956762786
 Transform:
   m_ObjectHideFlags: 0
