@@ -70,4 +70,11 @@ public class ChangeGrabByDistance : MonoBehaviour
         usingAlyxGrab = true;
         Debug.Log("Canviat a Alyx Grab");
     }
+
+    /*void OnDrawGizmosSelected()
+    {
+        // Si estem en selecció, dibuixem una wire sphere de color verd
+        Gizmos.color = Color.green;
+        Gizmos.DrawWireSphere(transform.position, switchRange);
+    }*/
 }
