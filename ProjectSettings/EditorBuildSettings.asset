@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/MainMenu.unity
+    guid: 2af2a7a813b19574e92c0d5d728b93a3
+  - enabled: 1
     path: Assets/Scenes/BerserkScene.unity
     guid: f1e11cbcfa52b9745b7e089c2b82ae26
   - enabled: 1

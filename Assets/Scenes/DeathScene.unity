@@ -5130,7 +5130,6 @@ GameObject:
   - component: {fileID: 479509742}
   - component: {fileID: 479509741}
   - component: {fileID: 479509740}
-  - component: {fileID: 479509739}
   - component: {fileID: 479509738}
   - component: {fileID: 479509737}
   - component: {fileID: 479509736}
@@ -5301,21 +5300,6 @@ CapsuleCollider:
   m_Height: 0.8581696
   m_Direction: 2
   m_Center: {x: 0, y: 0, z: 0.28484747}
---- !u!114 &479509739
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 479509735}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5f024fdbc4e78a5438d635c15c4f943e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  hapticIntensity: 0.5
-  hapticDuration: 0.1
-  targetTag: Skeleton
 --- !u!64 &479509740
 MeshCollider:
   m_ObjectHideFlags: 0
