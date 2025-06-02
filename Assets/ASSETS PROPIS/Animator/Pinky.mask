@@ -1,0 +1,99 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!319 &31900000
+AvatarMask:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Pinky
+  m_Mask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+  m_Elements:
+  - m_Path: 
+    m_Weight: 1
+  - m_Path: Armature
+    m_Weight: 1
+  - m_Path: Armature/Bone
+    m_Weight: 1
+  - m_Path: Armature/Bone/AnularMano
+    m_Weight: 0
+  - m_Path: Armature/Bone/AnularMano/AnularFal1
+    m_Weight: 0
+  - m_Path: Armature/Bone/AnularMano/AnularFal1/AnularFal2
+    m_Weight: 0
+  - m_Path: Armature/Bone/AnularMano/AnularFal1/AnularFal2/AnularFal3
+    m_Weight: 0
+  - m_Path: Armature/Bone/AnularMano/AnularFal1/AnularFal2/AnularFal3/AnularFal3_end
+    m_Weight: 0
+  - m_Path: Armature/Bone/CorMano
+    m_Weight: 0
+  - m_Path: Armature/Bone/CorMano/CorFal1
+    m_Weight: 0
+  - m_Path: Armature/Bone/CorMano/CorFal1/CorFal2
+    m_Weight: 0
+  - m_Path: Armature/Bone/CorMano/CorFal1/CorFal2/CorFal3
+    m_Weight: 0
+  - m_Path: Armature/Bone/CorMano/CorFal1/CorFal2/CorFal3/CorFal3_end
+    m_Weight: 0
+  - m_Path: Armature/Bone/IndMano
+    m_Weight: 0
+  - m_Path: Armature/Bone/IndMano/IndFal1
+    m_Weight: 0
+  - m_Path: Armature/Bone/IndMano/IndFal1/IndFal2
+    m_Weight: 0
+  - m_Path: Armature/Bone/IndMano/IndFal1/IndFal2/IndFal3
+    m_Weight: 0
+  - m_Path: Armature/Bone/IndMano/IndFal1/IndFal2/IndFal3/IndFal3_end
+    m_Weight: 0
+  - m_Path: Armature/Bone/MeniqueMano
+    m_Weight: 1
+  - m_Path: Armature/Bone/MeniqueMano/MeniqueFal1
+    m_Weight: 1
+  - m_Path: Armature/Bone/MeniqueMano/MeniqueFal1/MeniqueFal2
+    m_Weight: 1
+  - m_Path: Armature/Bone/MeniqueMano/MeniqueFal1/MeniqueFal2/MeniqueFal3
+    m_Weight: 1
+  - m_Path: Armature/Bone/MeniqueMano/MeniqueFal1/MeniqueFal2/MeniqueFal3/MeniqueFal3_end
+    m_Weight: 0
+  - m_Path: Armature/PulgarMano
+    m_Weight: 0
+  - m_Path: Armature/PulgarMano/PulgarFal1
+    m_Weight: 0
+  - m_Path: Armature/PulgarMano/PulgarFal1/PulgarFal2
+    m_Weight: 0
+  - m_Path: Armature/PulgarMano/PulgarFal1/PulgarFal2/PulgarFal2_end
+    m_Weight: 0
+  - m_Path: Camera
+    m_Weight: 0
+  - m_Path: Gem
+    m_Weight: 0
+  - m_Path: GemHold
+    m_Weight: 0
+  - m_Path: GemHs
+    m_Weight: 0
+  - m_Path: GloveBase
+    m_Weight: 0
+  - m_Path: HandGuard2
+    m_Weight: 0
+  - m_Path: HandGuard3
+    m_Weight: 0
+  - m_Path: IFStraps
+    m_Weight: 0
+  - m_Path: IndexFinger
+    m_Weight: 0
+  - m_Path: LFStraps
+    m_Weight: 1
+  - m_Path: LittleFinger
+    m_Weight: 1
+  - m_Path: MFStraps
+    m_Weight: 0
+  - m_Path: MiddleFinger
+    m_Weight: 0
+  - m_Path: RFStraps
+    m_Weight: 0
+  - m_Path: RingFinger
+    m_Weight: 0
+  - m_Path: TFStraps
+    m_Weight: 0
+  - m_Path: Thumb
+    m_Weight: 0
