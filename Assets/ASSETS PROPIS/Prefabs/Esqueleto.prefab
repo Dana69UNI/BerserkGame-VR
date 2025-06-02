@@ -15868,7 +15868,7 @@ GameObject:
   - component: {fileID: 5325404421298171443}
   m_Layer: 0
   m_Name: Esqueleto
-  m_TagString: Untagged
+  m_TagString: Skeleton
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
