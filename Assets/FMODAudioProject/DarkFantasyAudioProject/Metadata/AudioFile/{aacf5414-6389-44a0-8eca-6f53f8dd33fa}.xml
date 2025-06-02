@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{aacf5414-6389-44a0-8eca-6f53f8dd33fa}">
+		<property name="assetPath">
+			<value>HuesoSonido2.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>0.5</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{2fb94702-ea4d-431d-a53c-d511078bd193}</destination>
+		</relationship>
+	</object>
+</objects>

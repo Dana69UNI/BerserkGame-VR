@@ -15,10 +15,10 @@ MonoBehaviour:
   Path: Assets/FMODAudioProject/DarkFantasyAudioProject/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638844773042879872
+  lastModified: 638845095902879530
   FileSizes:
   - Name: Desktop
-    Value: 858
+    Value: 1062
   Exists: 1
 --- !u!114 &-4961006907256001302
 MonoBehaviour:
@@ -35,10 +35,30 @@ MonoBehaviour:
   Path: Assets/FMODAudioProject/DarkFantasyAudioProject/Build/Desktop/SFX.bank
   Name: SFX
   StudioPath: bank:/SFX
-  lastModified: 638844773043009948
+  lastModified: 638845096188450768
   FileSizes:
   - Name: Desktop
-    Value: 64608
+    Value: 73856
+  Exists: 1
+--- !u!114 &-4405400338709255041
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Musica.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/FMODAudioProject/DarkFantasyAudioProject/Build/Desktop/Musica.bank
+  Name: Musica
+  StudioPath: bank:/Musica
+  lastModified: 638845105286060694
+  FileSizes:
+  - Name: Desktop
+    Value: 2939200
   Exists: 1
 --- !u!114 &-4272805300281028865
 MonoBehaviour:
@@ -67,6 +87,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 500
+--- !u!114 &-709358701288526128
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/MuerteDigna
+  m_EditorClassIdentifier: 
+  Path: event:/MuerteDigna
+  Guid:
+    Data1: -355017535
+    Data2: 1108637972
+    Data3: 584110485
+    Data4: -1118100506
+  Banks:
+  - {fileID: -4405400338709255041}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 19200
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -83,15 +130,19 @@ MonoBehaviour:
   - {fileID: -6774911984922517984}
   - {fileID: 3314261293274709304}
   - {fileID: -4961006907256001302}
+  - {fileID: -4405400338709255041}
   EditorEvents:
   - {fileID: -4272805300281028865}
   - {fileID: 88920877623968949}
+  - {fileID: -709358701288526128}
+  - {fileID: 5646622460874879921}
+  - {fileID: 8871609142667240688}
   EditorParameters: []
   MasterBanks:
   - {fileID: 3314261293274709304}
   StringsBanks:
   - {fileID: -6774911984922517984}
-  cacheTime: 638844773043009948
+  cacheTime: 638845105286060694
   cacheVersion: 131621
 --- !u!114 &88920877623968949
 MonoBehaviour:
@@ -135,8 +186,62 @@ MonoBehaviour:
   Path: Assets/FMODAudioProject/DarkFantasyAudioProject/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638844773042760201
+  lastModified: 638845095902869553
   FileSizes:
   - Name: Desktop
     Value: 1036
   Exists: 1
+--- !u!114 &5646622460874879921
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/GutsThemeMainMenu
+  m_EditorClassIdentifier: 
+  Path: event:/GutsThemeMainMenu
+  Guid:
+    Data1: -173261363
+    Data2: 1282957675
+    Data3: -547296870
+    Data4: -818469469
+  Banks:
+  - {fileID: -4405400338709255041}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 215650
+--- !u!114 &8871609142667240688
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/HitEsqueleto
+  m_EditorClassIdentifier: 
+  Path: event:/HitEsqueleto
+  Guid:
+    Data1: 1100460015
+    Data2: 1201151307
+    Data3: -1803391842
+    Data4: -128125187
+  Banks:
+  - {fileID: -4961006907256001302}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 500
