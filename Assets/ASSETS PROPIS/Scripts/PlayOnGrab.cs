@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.XR.Interaction.Toolkit;
 using UnityEngine.XR.Interaction.Toolkit.Interactables;
 using UnityEngine.XR.Interaction.Toolkit.Interactors;
@@ -21,5 +22,6 @@ public class PlayOnGrab : XRGrabInteractable
     {
         //crec que es millor que ho posis aqui, sembla mes ordenat
         Debug.Log("Canvi d'escena!");
+        SceneManager.LoadScene("BerserkScene");
     }
 }

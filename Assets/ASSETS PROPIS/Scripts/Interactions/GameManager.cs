@@ -22,4 +22,9 @@ public class GameManager : MonoBehaviour
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
+
+    public void GoToGameOver()
+    {
+        SceneManager.LoadScene("DeathScene");
+    }
 }
