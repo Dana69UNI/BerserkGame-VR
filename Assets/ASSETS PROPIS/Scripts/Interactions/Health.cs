@@ -42,6 +42,9 @@ public class Health : MonoBehaviour
     {
         Debug.Log("Has mort");
         //reinicia l'escena actual
-        GameManager.Instance.RestartGame();
+        //GameManager.Instance.RestartGame();
+
+        //Canviar a escena Mort
+        GameManager.Instance.GoToGameOver();
     }
 }
