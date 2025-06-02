@@ -573,6 +573,8 @@ MonoBehaviour:
   m_StartingMultipleGrabTransformers: []
   m_AddDefaultGrabTransformers: 1
   m_FarAttachMode: 0
+  velocityThreshold: 2
+  jumpAngleDegree: 60
 --- !u!1 &756192406
 GameObject:
   m_ObjectHideFlags: 0
