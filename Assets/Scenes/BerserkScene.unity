@@ -379,7 +379,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d3d6ac78d193da49b8be1a87053d416, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 2147483647
+  maxHealth: 10
   currentHealth: 0
 --- !u!4 &385254563 stripped
 Transform:
