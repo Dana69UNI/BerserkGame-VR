@@ -327,7 +327,7 @@ GameObject:
   - component: {fileID: 6559981265723654597}
   - component: {fileID: 5213033385596001561}
   - component: {fileID: 2484251670594093523}
-  - component: {fileID: 4970652017477311050}
+  - component: {fileID: 6040921022740278126}
   m_Layer: 0
   m_Name: BrazoL_Bone
   m_TagString: Untagged
@@ -530,16 +530,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c9b651767d157bc43a78f88f82ccd7ab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &4970652017477311050
+--- !u!114 &6040921022740278126
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 237062026629075194}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ca1ce158727fe29489d4606f548a3a77, type: 3}
+  m_Script: {fileID: 11500000, guid: 0ad34abafad169848a38072baa96cdb2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_InteractionManager: {fileID: 0}
@@ -652,8 +652,6 @@ MonoBehaviour:
   m_StartingMultipleGrabTransformers: []
   m_AddDefaultGrabTransformers: 1
   m_FarAttachMode: 0
-  velocityThreshold: 2
-  jumpAngleDegree: 60
 --- !u!1 &283820202842224684
 GameObject:
   m_ObjectHideFlags: 0
@@ -866,7 +864,7 @@ GameObject:
   - component: {fileID: 8257362821706774988}
   - component: {fileID: 4748860938665161249}
   - component: {fileID: 8770535530211294249}
-  - component: {fileID: 3250124888320630462}
+  - component: {fileID: 1466281785293680799}
   m_Layer: 0
   m_Name: BrazoR_Bone
   m_TagString: Untagged
@@ -1069,16 +1067,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c9b651767d157bc43a78f88f82ccd7ab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &3250124888320630462
+--- !u!114 &1466281785293680799
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 757150044095066874}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ca1ce158727fe29489d4606f548a3a77, type: 3}
+  m_Script: {fileID: 11500000, guid: 0ad34abafad169848a38072baa96cdb2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_InteractionManager: {fileID: 0}
@@ -1191,8 +1189,6 @@ MonoBehaviour:
   m_StartingMultipleGrabTransformers: []
   m_AddDefaultGrabTransformers: 1
   m_FarAttachMode: 0
-  velocityThreshold: 2
-  jumpAngleDegree: 60
 --- !u!1 &835491866669616195
 GameObject:
   m_ObjectHideFlags: 0
@@ -1506,7 +1502,7 @@ GameObject:
   - component: {fileID: 2555516824459677315}
   - component: {fileID: 7134244664998638956}
   - component: {fileID: 1665773174177634946}
-  - component: {fileID: 7167250452468766505}
+  - component: {fileID: 8934229565009430001}
   m_Layer: 0
   m_Name: Pelvis_Bone
   m_TagString: Untagged
@@ -1711,16 +1707,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c9b651767d157bc43a78f88f82ccd7ab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &7167250452468766505
+--- !u!114 &8934229565009430001
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1256534102299402321}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ca1ce158727fe29489d4606f548a3a77, type: 3}
+  m_Script: {fileID: 11500000, guid: 0ad34abafad169848a38072baa96cdb2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_InteractionManager: {fileID: 0}
@@ -1833,8 +1829,6 @@ MonoBehaviour:
   m_StartingMultipleGrabTransformers: []
   m_AddDefaultGrabTransformers: 1
   m_FarAttachMode: 0
-  velocityThreshold: 2
-  jumpAngleDegree: 60
 --- !u!1 &1279173264129046366
 GameObject:
   m_ObjectHideFlags: 0
@@ -2239,7 +2233,7 @@ GameObject:
   - component: {fileID: 1178303530769538020}
   - component: {fileID: 1998680879079961342}
   - component: {fileID: 1555452765149039445}
-  - component: {fileID: 6294006228332240113}
+  - component: {fileID: 6624123528701504848}
   m_Layer: 0
   m_Name: Torso_Bone
   m_TagString: Untagged
@@ -2444,16 +2438,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c9b651767d157bc43a78f88f82ccd7ab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &6294006228332240113
+--- !u!114 &6624123528701504848
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1711920274622365190}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ca1ce158727fe29489d4606f548a3a77, type: 3}
+  m_Script: {fileID: 11500000, guid: 0ad34abafad169848a38072baa96cdb2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_InteractionManager: {fileID: 0}
@@ -2566,8 +2560,6 @@ MonoBehaviour:
   m_StartingMultipleGrabTransformers: []
   m_AddDefaultGrabTransformers: 1
   m_FarAttachMode: 0
-  velocityThreshold: 2
-  jumpAngleDegree: 60
 --- !u!1 &1712708865994648988
 GameObject:
   m_ObjectHideFlags: 0
@@ -9798,7 +9790,7 @@ GameObject:
   - component: {fileID: 1834084513919429352}
   - component: {fileID: 7629013474225309382}
   - component: {fileID: 5983773649795734791}
-  - component: {fileID: 7928635710576896195}
+  - component: {fileID: 6699079158986624635}
   m_Layer: 0
   m_Name: FemurR_Bone
   m_TagString: Untagged
@@ -10001,16 +9993,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c9b651767d157bc43a78f88f82ccd7ab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &7928635710576896195
+--- !u!114 &6699079158986624635
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5673547954112651919}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ca1ce158727fe29489d4606f548a3a77, type: 3}
+  m_Script: {fileID: 11500000, guid: 0ad34abafad169848a38072baa96cdb2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_InteractionManager: {fileID: 0}
@@ -10123,8 +10115,6 @@ MonoBehaviour:
   m_StartingMultipleGrabTransformers: []
   m_AddDefaultGrabTransformers: 1
   m_FarAttachMode: 0
-  velocityThreshold: 2
-  jumpAngleDegree: 60
 --- !u!1 &6716192258622170117
 GameObject:
   m_ObjectHideFlags: 0
@@ -10342,7 +10332,7 @@ GameObject:
   - component: {fileID: 7671444357630909775}
   - component: {fileID: 8929448791879779031}
   - component: {fileID: 3765439835217767361}
-  - component: {fileID: 5757229902816520923}
+  - component: {fileID: 2839610782221420974}
   m_Layer: 0
   m_Name: AnteBrazoManoR_Bone
   m_TagString: Untagged
@@ -10546,16 +10536,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c9b651767d157bc43a78f88f82ccd7ab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &5757229902816520923
+--- !u!114 &2839610782221420974
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7274784992512013531}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ca1ce158727fe29489d4606f548a3a77, type: 3}
+  m_Script: {fileID: 11500000, guid: 0ad34abafad169848a38072baa96cdb2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_InteractionManager: {fileID: 0}
@@ -10668,8 +10658,6 @@ MonoBehaviour:
   m_StartingMultipleGrabTransformers: []
   m_AddDefaultGrabTransformers: 1
   m_FarAttachMode: 0
-  velocityThreshold: 2
-  jumpAngleDegree: 60
 --- !u!1 &7577698490639508847
 GameObject:
   m_ObjectHideFlags: 0
@@ -16265,7 +16253,7 @@ GameObject:
   - component: {fileID: 59245663232321933}
   - component: {fileID: 452475844074902798}
   - component: {fileID: 2014732729657275830}
-  - component: {fileID: 7478992800443825042}
+  - component: {fileID: 5946797851284946920}
   m_Layer: 0
   m_Name: Craneo_Bone
   m_TagString: Untagged
@@ -16468,16 +16456,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c9b651767d157bc43a78f88f82ccd7ab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &7478992800443825042
+--- !u!114 &5946797851284946920
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8367730122691939242}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ca1ce158727fe29489d4606f548a3a77, type: 3}
+  m_Script: {fileID: 11500000, guid: 0ad34abafad169848a38072baa96cdb2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_InteractionManager: {fileID: 0}
@@ -16590,8 +16578,6 @@ MonoBehaviour:
   m_StartingMultipleGrabTransformers: []
   m_AddDefaultGrabTransformers: 1
   m_FarAttachMode: 0
-  velocityThreshold: 2
-  jumpAngleDegree: 60
 --- !u!1 &8379462261056138352
 GameObject:
   m_ObjectHideFlags: 0
@@ -16689,7 +16675,7 @@ GameObject:
   - component: {fileID: 7743491807688049524}
   - component: {fileID: 4666720035561518802}
   - component: {fileID: 3662954327857937607}
-  - component: {fileID: 7513742712226365268}
+  - component: {fileID: 7272271468005809343}
   m_Layer: 0
   m_Name: FemurL_Bone
   m_TagString: Untagged
@@ -16892,16 +16878,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c9b651767d157bc43a78f88f82ccd7ab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &7513742712226365268
+--- !u!114 &7272271468005809343
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8652127015025752496}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ca1ce158727fe29489d4606f548a3a77, type: 3}
+  m_Script: {fileID: 11500000, guid: 0ad34abafad169848a38072baa96cdb2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_InteractionManager: {fileID: 0}
@@ -17014,8 +17000,6 @@ MonoBehaviour:
   m_StartingMultipleGrabTransformers: []
   m_AddDefaultGrabTransformers: 1
   m_FarAttachMode: 0
-  velocityThreshold: 2
-  jumpAngleDegree: 60
 --- !u!1 &8736933171638092125
 GameObject:
   m_ObjectHideFlags: 0
