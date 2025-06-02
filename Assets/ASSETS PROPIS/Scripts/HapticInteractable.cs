@@ -26,10 +26,10 @@ public class HapticInteractable : MonoBehaviour
 
     private void OnEnable()
     {
-        //Quan algú agafi l'arma guardem el seu XRBaseCOntroller
+        //Quan algï¿½ agafi l'arma guardem el seu XRBaseCOntroller
         _grabInteractable.selectEntered.AddListener(OnGrabbed);
 
-        //Quan deixin anar l'arma, esborrem aquesta referència
+        //Quan deixin anar l'arma, esborrem aquesta referï¿½ncia
         _grabInteractable.selectExited.AddListener(OnReleased);
     }
 
@@ -41,9 +41,13 @@ public class HapticInteractable : MonoBehaviour
 
     private void OnGrabbed(SelectEnterEventArgs args)
     {
-        if(args.interactorObject is XRBaseInteractor baseInteractor)
+        if (args.interactorObject is XRBaseInputInteractor controllerInteractor)
         {
-            _holdingController = baseInteractor.xrController;
+            _holdingController = controllerInteractor.xrController;
+        }
+        else
+        {
+            Debug.LogWarning("Interactor is not a controller-based interactor.");
         }
     }
 
@@ -52,7 +56,7 @@ public class HapticInteractable : MonoBehaviour
         _holdingController = null;
     }
 
-    //Per a que funcioni la resposta hàptica tant si fem servir trigger o collisions
+    //Per a que funcioni la resposta hï¿½ptica tant si fem servir trigger o collisions
     private void OnCollisionEnter(Collision collision)
     {
         TrySendHaptic(collision.collider);
@@ -65,17 +69,17 @@ public class HapticInteractable : MonoBehaviour
 
     private void TrySendHaptic(Collider hitColider)
     {
-        //Si el collider té el tag correcte
+        //Si el collider tï¿½ el tag correcte
         if (_holdingController == null)
         {
-            //No hi ha ningú agafant l'objecte
+            //No hi ha ningï¿½ agafant l'objecte
             Debug.LogWarning("No controller is holding the interactable.");
             return;
         }
 
         if (hitColider.CompareTag(targetTag))
         {
-            //Si el tag del collider és el correcte
+            //Si el tag del collider ï¿½s el correcte
             Debug.Log("Sending haptic feedback to controller: " + _holdingController.name);
             _holdingController.SendHapticImpulse(hapticIntensity, hapticDuration);
         }

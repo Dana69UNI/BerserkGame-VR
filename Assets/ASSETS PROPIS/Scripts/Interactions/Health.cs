@@ -22,22 +22,21 @@ public class Health : MonoBehaviour
 
         if (damageImage == null)
         {
-            Debug.LogError("Fade Image is not assigned in the FadeController.");
+            Debug.LogError("Health: no has asignado 'damageImage' en el Inspector.");
         }
-
         else
         {
-            //Ens assegurem que comenci sent transparent la imatge
+            // Ens assegurem que la imatge comenci sent transparent
             var c = damageImage.color;
             c.a = 0f;
             damageImage.color = c;
         }
 
-        if(damageAlphas == null || damageAlphas.Length > maxHealth)
+        if (damageAlphas == null || damageAlphas.Length < maxHealth)
         {
-            Debug.LogError("Damage alphas array is not assigned or empty.");
-            
-        } 
+            Debug.LogError("Health: damageAlphas no está asignado o su Length < maxHealth. " +
+                           $"(Length = {(damageAlphas == null ? 0 : damageAlphas.Length)}, maxHealth = {maxHealth})");
+        }
     }
 
     public void TakeDamage(int amount)
@@ -46,10 +45,14 @@ public class Health : MonoBehaviour
 
         int hitsTaken = maxHealth - currentHealth;
 
-        if(damageImage != null && damageAlphas != null && hitsTaken >0 && hitsTaken <= damageAlphas.Length)
+        if(damageImage != null && damageAlphas != null && hitsTaken > 0 && hitsTaken <= damageAlphas.Length)
         {
             float newAlpha = damageAlphas[hitsTaken - 1];
             SetImageAlpha(newAlpha);
+        }
+        else
+        {
+            Debug.Log($"Health.TakeDamage = (hitsTaken fuera de rango o falta Image)");
         }
 
         if (currentHealth <= 0)
@@ -62,7 +65,9 @@ public class Health : MonoBehaviour
 
     private void SetImageAlpha(float alpha)
     {
-        var c = damageImage.color;
+        if (damageImage == null) return;
+
+        Color c = damageImage.color;
         c.a = alpha;
         damageImage.color = c;
     }
