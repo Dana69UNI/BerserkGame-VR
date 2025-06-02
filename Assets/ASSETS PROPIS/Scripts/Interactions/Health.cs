@@ -22,7 +22,7 @@ public class Health : MonoBehaviour
 
         if (damageImage == null)
         {
-            Debug.LogError("Health: no has asignado 'damageImage' en el Inspector.");
+            Debug.Log("Health: no has asignado 'damageImage' en el Inspector.");
         }
         else
         {
@@ -34,7 +34,7 @@ public class Health : MonoBehaviour
 
         if (damageAlphas == null || damageAlphas.Length < maxHealth)
         {
-            Debug.LogError("Health: damageAlphas no está asignado o su Length < maxHealth. " +
+            Debug.Log("Health: damageAlphas no está asignado o su Length < maxHealth. " +
                            $"(Length = {(damageAlphas == null ? 0 : damageAlphas.Length)}, maxHealth = {maxHealth})");
         }
     }
