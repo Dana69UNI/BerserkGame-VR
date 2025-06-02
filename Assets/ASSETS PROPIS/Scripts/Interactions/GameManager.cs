@@ -2,10 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
 {
     public static GameManager Instance { get; private set; }
+    
+    public FadeController fadeController;
 
     void Awake()
     {
@@ -25,6 +28,15 @@ public class GameManager : MonoBehaviour
 
     public void GoToGameOver()
     {
-        SceneManager.LoadScene("DeathScene");
+        if(fadeController!=null)
+        {
+            fadeController.FadeToScene("DeathScene");
+        }
+        else
+        {
+            Debug.LogError("FadeController is not assigned in GameManager.");
+            SceneManager.LoadScene("DeathScene");
+        }
+        
     }
 }
