@@ -12,10 +12,3 @@ Pablo Alegre,
 Marcos Ortuño,
 Anastasia Anaya i 
 Ovidiu Nerges
-
-Assets Externs utilitzats <br>
-
-So:<br>
-shovel_hit_spade_mimicking_sword_clashing_sounds by Artninja -- https://freesound.org/s/725071/ -- License: Attribution 4.0
-Heavy Metal Thud on Ground by 7of9Designs -- https://freesound.org/s/640204/ -- License: Creative Commons 0
-HEAVY BAG DROP DIRT.wav by burbujafilms -- https://freesound.org/s/392008/ -- License: Creative Commons 0
