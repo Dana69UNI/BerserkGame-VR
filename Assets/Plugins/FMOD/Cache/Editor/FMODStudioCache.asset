@@ -1,5 +1,32 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-7447898422478583722
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Fireplace
+  m_EditorClassIdentifier: 
+  Path: event:/Fireplace
+  Guid:
+    Data1: 615888843
+    Data2: 1183415745
+    Data3: 1507454397
+    Data4: 1528756024
+  Banks:
+  - {fileID: -4961006907256001302}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 90000
 --- !u!114 &-6774911984922517984
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15,10 +42,10 @@ MonoBehaviour:
   Path: Assets/FMODAudioProject/DarkFantasyAudioProject/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638845124404213928
+  lastModified: 638845166948447947
   FileSizes:
   - Name: Desktop
-    Value: 1104
+    Value: 1238
   Exists: 1
 --- !u!114 &-4961006907256001302
 MonoBehaviour:
@@ -35,10 +62,10 @@ MonoBehaviour:
   Path: Assets/FMODAudioProject/DarkFantasyAudioProject/Build/Desktop/SFX.bank
   Name: SFX
   StudioPath: bank:/SFX
-  lastModified: 638845133522243814
+  lastModified: 638845169858774132
   FileSizes:
   - Name: Desktop
-    Value: 252352
+    Value: 1706944
   Exists: 1
 --- !u!114 &-4405400338709255041
 MonoBehaviour:
@@ -55,10 +82,10 @@ MonoBehaviour:
   Path: Assets/FMODAudioProject/DarkFantasyAudioProject/Build/Desktop/Musica.bank
   Name: Musica
   StudioPath: bank:/Musica
-  lastModified: 638845105286060694
+  lastModified: 638845159475869037
   FileSizes:
   - Name: Desktop
-    Value: 2939200
+    Value: 3749504
   Exists: 1
 --- !u!114 &-4272805300281028865
 MonoBehaviour:
@@ -87,6 +114,60 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 500
+--- !u!114 &-3213141001299043112
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/MusicaCombate
+  m_EditorClassIdentifier: 
+  Path: event:/MusicaCombate
+  Guid:
+    Data1: 546383818
+    Data2: 1179523795
+    Data3: 449081481
+    Data4: 1610709782
+  Banks:
+  - {fileID: -4405400338709255041}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 72980
+--- !u!114 &-1238600995239331650
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/PlayerDMG
+  m_EditorClassIdentifier: 
+  Path: event:/PlayerDMG
+  Guid:
+    Data1: 1319108944
+    Data2: 1262119231
+    Data3: 522669494
+    Data4: -203359620
+  Banks:
+  - {fileID: -4961006907256001302}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1000
 --- !u!114 &-709358701288526128
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -138,12 +219,15 @@ MonoBehaviour:
   - {fileID: 5646622460874879921}
   - {fileID: 8871609142667240688}
   - {fileID: 3049883352976862427}
+  - {fileID: -7447898422478583722}
+  - {fileID: -3213141001299043112}
+  - {fileID: -1238600995239331650}
   EditorParameters: []
   MasterBanks:
   - {fileID: 3314261293274709304}
   StringsBanks:
   - {fileID: -6774911984922517984}
-  cacheTime: 638845133522243814
+  cacheTime: 638845169858774132
   cacheVersion: 131621
 --- !u!114 &88920877623968949
 MonoBehaviour:
@@ -214,7 +298,7 @@ MonoBehaviour:
   Path: Assets/FMODAudioProject/DarkFantasyAudioProject/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638845124404193985
+  lastModified: 638845166948428007
   FileSizes:
   - Name: Desktop
     Value: 1036

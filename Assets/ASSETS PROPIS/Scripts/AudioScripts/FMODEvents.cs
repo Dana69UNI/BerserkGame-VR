@@ -14,6 +14,8 @@ public class FMODEvents : MonoBehaviour
     [field: Header("Player SFX")]
     [field: SerializeField] public EventReference playerHit { get; private set; }
 
+    [field: SerializeField] public EventReference fuegoCamp { get; private set; }
+
     [field: Header("Esqueletillos SFX")]
     [field: SerializeField] public EventReference esqueletoCaminando { get; private set; }
 

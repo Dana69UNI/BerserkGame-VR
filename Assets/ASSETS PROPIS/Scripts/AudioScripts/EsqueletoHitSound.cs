@@ -9,7 +9,7 @@ public class EsqueletoHitSound : MonoBehaviour
     private EventInstance EsqueletoRes;
     public bool Cabeza= false;
     // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
         GolpeSueloEsqueleto = AudioManager.instance.CreateEventInstanceObj(FMODEvents.instance.espadaHitSuelo, gameObject.transform);
         GolpeEspadaEsqueleto = AudioManager.instance.CreateEventInstanceObj(FMODEvents.instance.esqueletoGolpe, gameObject.transform);

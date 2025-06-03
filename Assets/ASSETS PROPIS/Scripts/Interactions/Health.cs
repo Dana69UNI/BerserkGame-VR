@@ -4,12 +4,14 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using FMOD.Studio;
+
 
 public class Health : MonoBehaviour
 {
     public int maxHealth = 5;
     public int currentHealth;
-
+    private EventInstance PlayerDMG;
     public Image damageImage;
 
     [Range(0f, 1f)]
@@ -18,6 +20,7 @@ public class Health : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        PlayerDMG = AudioManager.instance.CreateInstance(FMODEvents.instance.playerHit);
         currentHealth = maxHealth;
 
         if (damageImage == null)
@@ -44,6 +47,7 @@ public class Health : MonoBehaviour
         currentHealth -= amount;
 
         int hitsTaken = maxHealth - currentHealth;
+        PlayerDMG.start();
 
         if(damageImage != null && damageAlphas != null && hitsTaken > 0 && hitsTaken <= damageAlphas.Length)
         {

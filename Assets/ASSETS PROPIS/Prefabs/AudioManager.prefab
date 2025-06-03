@@ -102,11 +102,11 @@ MonoBehaviour:
     Path: event:/GutsThemeMainMenu
   <musicCombate>k__BackingField:
     Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
+      Data1: 546383818
+      Data2: 1179523795
+      Data3: 449081481
+      Data4: 1610709782
+    Path: event:/MusicaCombate
   <musicaMuerte>k__BackingField:
     Guid:
       Data1: -355017535
@@ -116,11 +116,18 @@ MonoBehaviour:
     Path: event:/MuerteDigna
   <playerHit>k__BackingField:
     Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
+      Data1: 1319108944
+      Data2: 1262119231
+      Data3: 522669494
+      Data4: -203359620
+    Path: event:/PlayerDMG
+  <fuegoCamp>k__BackingField:
+    Guid:
+      Data1: 615888843
+      Data2: 1183415745
+      Data3: 1507454397
+      Data4: 1528756024
+    Path: event:/Fireplace
   <esqueletoCaminando>k__BackingField:
     Guid:
       Data1: 1557886171

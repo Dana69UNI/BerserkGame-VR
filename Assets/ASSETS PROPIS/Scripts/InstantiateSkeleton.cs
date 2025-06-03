@@ -396,6 +396,7 @@ public class InstantiateSkeleton : MonoBehaviour
 
     IEnumerator EmpezarOleadas()
     {
+        yield return new WaitForSeconds(32f);
         yield return OleadaUno();
         yield return new WaitForSeconds(15f);
 

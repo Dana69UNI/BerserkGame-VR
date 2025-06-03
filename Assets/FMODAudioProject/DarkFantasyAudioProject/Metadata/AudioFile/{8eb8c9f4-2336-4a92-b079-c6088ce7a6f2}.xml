@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{8eb8c9f4-2336-4a92-b079-c6088ce7a6f2}">
+		<property name="assetPath">
+			<value>PlayerDmg3.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>1</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{2fb94702-ea4d-431d-a53c-d511078bd193}</destination>
+		</relationship>
+	</object>
+</objects>
