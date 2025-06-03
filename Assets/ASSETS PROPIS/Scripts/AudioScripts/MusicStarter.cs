@@ -8,7 +8,7 @@ public class MusicStarter : MonoBehaviour
 {
     private EventInstance MusicaMenu;
     private int Escena;
-    void Awake()
+    void Start()
     {
         Escena = SceneManager.GetActiveScene().buildIndex;
         if (Escena == 0)
@@ -18,6 +18,7 @@ public class MusicStarter : MonoBehaviour
         if (Escena == 1)
         {
             MusicaMenu = AudioManager.instance.CreateInstance(FMODEvents.instance.musicCombate);
+            Debug.Log("musica");
 
         }
         if (Escena == 2)
