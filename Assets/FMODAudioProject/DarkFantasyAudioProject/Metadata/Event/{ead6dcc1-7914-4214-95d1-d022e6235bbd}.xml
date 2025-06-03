@@ -101,7 +101,7 @@
 	</object>
 	<object class="EventMixerGroup" id="{50906b2b-ba90-4f2f-b636-945fc2aee55c}">
 		<property name="volume">
-			<value>6.5</value>
+			<value>1</value>
 		</property>
 		<property name="name">
 			<value>Audio 1</value>
@@ -149,7 +149,7 @@
 			<value>900</value>
 		</property>
 		<property name="highCrossover">
-			<value>2100</value>
+			<value>1200</value>
 		</property>
 	</object>
 	<object class="MixerBusFader" id="{59480053-cd58-4bfe-99ac-2804e531ae04}" />

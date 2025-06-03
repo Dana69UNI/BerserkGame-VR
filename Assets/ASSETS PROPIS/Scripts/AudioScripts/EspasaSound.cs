@@ -11,15 +11,8 @@ public class EspasaSound : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        GolpeSuelo = AudioManager.instance.CreateInstance(FMODEvents.instance.espadaHitSuelo);
-        GolpeEspada = AudioManager.instance.CreateInstance(FMODEvents.instance.espadaHitMetal);
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        FMODUnity.RuntimeManager.AttachInstanceToGameObject(GolpeSuelo, GetComponent<Transform>(), GetComponent<Rigidbody>());
-        FMODUnity.RuntimeManager.AttachInstanceToGameObject(GolpeEspada, GetComponent<Transform>(), GetComponent<Rigidbody>());
+        GolpeSuelo = AudioManager.instance.CreateEventInstanceObj(FMODEvents.instance.espadaHitSuelo, gameObject.transform);
+        GolpeEspada = AudioManager.instance.CreateEventInstanceObj(FMODEvents.instance.espadaHitMetal, gameObject.transform);
     }
 
     private void OnCollisionEnter(Collision collision)

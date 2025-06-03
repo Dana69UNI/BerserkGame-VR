@@ -123,11 +123,11 @@ MonoBehaviour:
     Path: 
   <esqueletoCaminando>k__BackingField:
     Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
+      Data1: 1557886171
+      Data2: 1115603048
+      Data3: 1782260670
+      Data4: -1553570277
+    Path: event:/EsqueletoRes
   <esqueletoGolpe>k__BackingField:
     Guid:
       Data1: 1100460015

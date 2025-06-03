@@ -6,6 +6,7 @@ using UnityEngine.XR.Interaction.Toolkit.Interactables;
 public class GrabEsqueleto : MonoBehaviour
 {
     private XRGrabInteractable grab;
+    private EsqueletoHitSound EsqueletoSound;
     private ConfigurableJoint joint;
     private bool grabEnabled = false;
     private Damage dmg;
@@ -27,6 +28,7 @@ public class GrabEsqueleto : MonoBehaviour
             grab.enabled = true;
             grabEnabled = true;
             dmg.enabled = false;
+            EsqueletoSound.StopRes();
             /*else if (!joint.connectedBody)
             {
                 // Opcional: si el joint encara existeix però s'ha "trencat" (sense connexió)

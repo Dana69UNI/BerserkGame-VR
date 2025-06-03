@@ -328,6 +328,7 @@ GameObject:
   - component: {fileID: 5213033385596001561}
   - component: {fileID: 2484251670594093523}
   - component: {fileID: 1071221220958554374}
+  - component: {fileID: 7528412116300344571}
   m_Layer: 0
   m_Name: BrazoL_Bone
   m_TagString: Untagged
@@ -652,6 +653,19 @@ MonoBehaviour:
   m_StartingMultipleGrabTransformers: []
   m_AddDefaultGrabTransformers: 1
   m_FarAttachMode: 1
+--- !u!114 &7528412116300344571
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 237062026629075194}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5749cbf525670d341ab0f7631c28a6d2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Cabeza: 0
 --- !u!1 &283820202842224684
 GameObject:
   m_ObjectHideFlags: 0
@@ -865,6 +879,7 @@ GameObject:
   - component: {fileID: 4748860938665161249}
   - component: {fileID: 8770535530211294249}
   - component: {fileID: 5477246340114036345}
+  - component: {fileID: 1635388873542095965}
   m_Layer: 0
   m_Name: BrazoR_Bone
   m_TagString: Untagged
@@ -1189,6 +1204,19 @@ MonoBehaviour:
   m_StartingMultipleGrabTransformers: []
   m_AddDefaultGrabTransformers: 1
   m_FarAttachMode: 1
+--- !u!114 &1635388873542095965
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 757150044095066874}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5749cbf525670d341ab0f7631c28a6d2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Cabeza: 0
 --- !u!1 &835491866669616195
 GameObject:
   m_ObjectHideFlags: 0
@@ -1503,6 +1531,7 @@ GameObject:
   - component: {fileID: 7134244664998638956}
   - component: {fileID: 1665773174177634946}
   - component: {fileID: 3175573020192056117}
+  - component: {fileID: 3602831044478304590}
   m_Layer: 0
   m_Name: Pelvis_Bone
   m_TagString: Untagged
@@ -1829,6 +1858,19 @@ MonoBehaviour:
   m_StartingMultipleGrabTransformers: []
   m_AddDefaultGrabTransformers: 1
   m_FarAttachMode: 1
+--- !u!114 &3602831044478304590
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1256534102299402321}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5749cbf525670d341ab0f7631c28a6d2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Cabeza: 0
 --- !u!1 &1279173264129046366
 GameObject:
   m_ObjectHideFlags: 0
@@ -2232,6 +2274,7 @@ GameObject:
   - component: {fileID: 1998680879079961342}
   - component: {fileID: 1555452765149039445}
   - component: {fileID: 4076588919816742472}
+  - component: {fileID: 4269596310851595368}
   m_Layer: 0
   m_Name: Torso_Bone
   m_TagString: Untagged
@@ -2559,6 +2602,19 @@ MonoBehaviour:
   m_StartingMultipleGrabTransformers: []
   m_AddDefaultGrabTransformers: 1
   m_FarAttachMode: 1
+--- !u!114 &4269596310851595368
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1711920274622365190}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5749cbf525670d341ab0f7631c28a6d2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Cabeza: 0
 --- !u!1 &1712708865994648988
 GameObject:
   m_ObjectHideFlags: 0
@@ -2963,6 +3019,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3570279655222464483}
+  - component: {fileID: 2176885165819719581}
   m_Layer: 0
   m_Name: AttachTorso
   m_TagString: Untagged
@@ -2985,6 +3042,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 2735281104445204263}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2176885165819719581
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2512647396266015876}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5749cbf525670d341ab0f7631c28a6d2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Cabeza: 0
 --- !u!1 &2556393718685662503
 GameObject:
   m_ObjectHideFlags: 0
@@ -4226,6 +4296,7 @@ GameObject:
   - component: {fileID: 437289998263526487}
   - component: {fileID: 3475967522985963974}
   - component: {fileID: 5641403247321002215}
+  - component: {fileID: 7987354877303260100}
   m_Layer: 0
   m_Name: AnteBrazoManoL_Bone
   m_TagString: Untagged
@@ -4549,6 +4620,19 @@ MonoBehaviour:
   m_StartingMultipleGrabTransformers: []
   m_AddDefaultGrabTransformers: 1
   m_FarAttachMode: 1
+--- !u!114 &7987354877303260100
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5209552644938667797}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5749cbf525670d341ab0f7631c28a6d2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Cabeza: 0
 --- !u!1 &5264914221316115755
 GameObject:
   m_ObjectHideFlags: 0
@@ -9817,6 +9901,7 @@ GameObject:
   - component: {fileID: 7629013474225309382}
   - component: {fileID: 5983773649795734791}
   - component: {fileID: 2152765244395846484}
+  - component: {fileID: 2277611915134305756}
   m_Layer: 0
   m_Name: FemurR_Bone
   m_TagString: Untagged
@@ -10141,6 +10226,19 @@ MonoBehaviour:
   m_StartingMultipleGrabTransformers: []
   m_AddDefaultGrabTransformers: 1
   m_FarAttachMode: 1
+--- !u!114 &2277611915134305756
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5673547954112651919}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5749cbf525670d341ab0f7631c28a6d2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Cabeza: 0
 --- !u!1 &6716192258622170117
 GameObject:
   m_ObjectHideFlags: 0
@@ -10359,6 +10457,7 @@ GameObject:
   - component: {fileID: 8929448791879779031}
   - component: {fileID: 3765439835217767361}
   - component: {fileID: 5569429636544388473}
+  - component: {fileID: 2714978222836160029}
   m_Layer: 0
   m_Name: AnteBrazoManoR_Bone
   m_TagString: Untagged
@@ -10684,6 +10783,19 @@ MonoBehaviour:
   m_StartingMultipleGrabTransformers: []
   m_AddDefaultGrabTransformers: 1
   m_FarAttachMode: 1
+--- !u!114 &2714978222836160029
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7274784992512013531}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5749cbf525670d341ab0f7631c28a6d2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Cabeza: 0
 --- !u!1 &7577698490639508847
 GameObject:
   m_ObjectHideFlags: 0
@@ -15940,7 +16052,7 @@ GameObject:
   - component: {fileID: 6566614540039800258}
   m_Layer: 0
   m_Name: SkeletonWeapon
-  m_TagString: Untagged
+  m_TagString: Sword
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -16278,6 +16390,7 @@ GameObject:
   - component: {fileID: 452475844074902798}
   - component: {fileID: 2014732729657275830}
   - component: {fileID: 761390301574445609}
+  - component: {fileID: 8054533981929165191}
   m_Layer: 0
   m_Name: Craneo_Bone
   m_TagString: Untagged
@@ -16602,6 +16715,19 @@ MonoBehaviour:
   m_StartingMultipleGrabTransformers: []
   m_AddDefaultGrabTransformers: 1
   m_FarAttachMode: 1
+--- !u!114 &8054533981929165191
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8367730122691939242}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5749cbf525670d341ab0f7631c28a6d2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Cabeza: 1
 --- !u!1 &8379462261056138352
 GameObject:
   m_ObjectHideFlags: 0
@@ -16700,6 +16826,7 @@ GameObject:
   - component: {fileID: 4666720035561518802}
   - component: {fileID: 3662954327857937607}
   - component: {fileID: 7339736766956626823}
+  - component: {fileID: 9145203840256499602}
   m_Layer: 0
   m_Name: FemurL_Bone
   m_TagString: Untagged
@@ -17024,6 +17151,19 @@ MonoBehaviour:
   m_StartingMultipleGrabTransformers: []
   m_AddDefaultGrabTransformers: 1
   m_FarAttachMode: 1
+--- !u!114 &9145203840256499602
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8652127015025752496}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5749cbf525670d341ab0f7631c28a6d2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Cabeza: 0
 --- !u!1 &8736933171638092125
 GameObject:
   m_ObjectHideFlags: 0

@@ -286,7 +286,7 @@ GameObject:
   - component: {fileID: 283235059}
   m_Layer: 0
   m_Name: Terrain
-  m_TagString: Untagged
+  m_TagString: Suelo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -441,6 +441,63 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 330905779}
   m_CullTransparentMesh: 1
+--- !u!1001 &350500733
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 343755239799381216, guid: 7657955e2d71bce4488639fa0835898d, type: 3}
+      propertyPath: m_Name
+      value: AudioManager
+      objectReference: {fileID: 0}
+    - target: {fileID: 8032070824267361915, guid: 7657955e2d71bce4488639fa0835898d, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -40.534847
+      objectReference: {fileID: 0}
+    - target: {fileID: 8032070824267361915, guid: 7657955e2d71bce4488639fa0835898d, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -26.586754
+      objectReference: {fileID: 0}
+    - target: {fileID: 8032070824267361915, guid: 7657955e2d71bce4488639fa0835898d, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 4.078253
+      objectReference: {fileID: 0}
+    - target: {fileID: 8032070824267361915, guid: 7657955e2d71bce4488639fa0835898d, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8032070824267361915, guid: 7657955e2d71bce4488639fa0835898d, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8032070824267361915, guid: 7657955e2d71bce4488639fa0835898d, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8032070824267361915, guid: 7657955e2d71bce4488639fa0835898d, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8032070824267361915, guid: 7657955e2d71bce4488639fa0835898d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8032070824267361915, guid: 7657955e2d71bce4488639fa0835898d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8032070824267361915, guid: 7657955e2d71bce4488639fa0835898d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7657955e2d71bce4488639fa0835898d, type: 3}
 --- !u!4 &385254563 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2990565645700352911, guid: 8fa5143051527e949b0ae174c8430414, type: 3}
@@ -2289,7 +2346,7 @@ Transform:
   m_GameObject: {fileID: 8603724324290515101}
   serializedVersion: 2
   m_LocalRotation: {x: -0.91580504, y: -0, z: -0, w: 0.4016232}
-  m_LocalPosition: {x: 1.056, y: 0.719, z: 2.036}
+  m_LocalPosition: {x: 0.52, y: 0.719, z: 2.036}
   m_LocalScale: {x: 2, y: 2, z: 2}
   m_ConstrainProportionsScale: 1
   m_Children:
@@ -2316,7 +2373,7 @@ GameObject:
   - component: {fileID: 8709835716209477082}
   m_Layer: 0
   m_Name: berserk_espada
-  m_TagString: Untagged
+  m_TagString: Espada
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2602,3 +2659,4 @@ SceneRoots:
   - {fileID: 633813340}
   - {fileID: 677270692}
   - {fileID: 1091319408}
+  - {fileID: 350500733}

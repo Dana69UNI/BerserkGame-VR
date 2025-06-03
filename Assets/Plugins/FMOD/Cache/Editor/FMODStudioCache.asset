@@ -15,10 +15,10 @@ MonoBehaviour:
   Path: Assets/FMODAudioProject/DarkFantasyAudioProject/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638845095902879530
+  lastModified: 638845124404213928
   FileSizes:
   - Name: Desktop
-    Value: 1062
+    Value: 1104
   Exists: 1
 --- !u!114 &-4961006907256001302
 MonoBehaviour:
@@ -35,10 +35,10 @@ MonoBehaviour:
   Path: Assets/FMODAudioProject/DarkFantasyAudioProject/Build/Desktop/SFX.bank
   Name: SFX
   StudioPath: bank:/SFX
-  lastModified: 638845096188450768
+  lastModified: 638845133522243814
   FileSizes:
   - Name: Desktop
-    Value: 73856
+    Value: 252352
   Exists: 1
 --- !u!114 &-4405400338709255041
 MonoBehaviour:
@@ -137,12 +137,13 @@ MonoBehaviour:
   - {fileID: -709358701288526128}
   - {fileID: 5646622460874879921}
   - {fileID: 8871609142667240688}
+  - {fileID: 3049883352976862427}
   EditorParameters: []
   MasterBanks:
   - {fileID: 3314261293274709304}
   StringsBanks:
   - {fileID: -6774911984922517984}
-  cacheTime: 638845105286060694
+  cacheTime: 638845133522243814
   cacheVersion: 131621
 --- !u!114 &88920877623968949
 MonoBehaviour:
@@ -171,6 +172,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 500
+--- !u!114 &3049883352976862427
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/EsqueletoRes
+  m_EditorClassIdentifier: 
+  Path: event:/EsqueletoRes
+  Guid:
+    Data1: 1557886171
+    Data2: 1115603048
+    Data3: 1782260670
+    Data4: -1553570277
+  Banks:
+  - {fileID: -4961006907256001302}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 17500
 --- !u!114 &3314261293274709304
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -186,7 +214,7 @@ MonoBehaviour:
   Path: Assets/FMODAudioProject/DarkFantasyAudioProject/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638845095902869553
+  lastModified: 638845124404193985
   FileSizes:
   - Name: Desktop
     Value: 1036
